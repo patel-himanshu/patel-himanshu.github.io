@@ -33,11 +33,10 @@
 title: Himanshu Patel
 subtitle: Portfolio Website
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the demo site for a Jekyll theme version of
-  HTML5 UP's sleek, responsive site template Prologue.
+  This is the portfolio website of Himanshu Patel.
 author: Himanshu Patel
 email: hpatel27299@gmail.com
-avatar: assets/images/avatar.jpg
+avatar: assets/images/profileimage.jpg
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog

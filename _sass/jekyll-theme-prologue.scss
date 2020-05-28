@@ -63,9 +63,9 @@
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.75em;
-		color: #888;
+		color: rgb(10, 9, 9);
 
 		&.is-loading * {
 			@include vendor('transition', 'none !important');
@@ -82,7 +82,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 300;
+		font-weight: 400;
 		color: #666;
 		line-height: 1.5em;
 	}
@@ -248,11 +248,13 @@
 		&.avatar48 {
 			width: 48px;
 			height: 48px;
-			background: #f00;
+			background: #212528;
+			// margin: 0 2em 0 2em;
+			padding: 0.75em 2.5em 0.75em 2.5em;
 
 			img {
-				width: 48px;
-				height: 48px;
+				width: 150px;
+				height: 150px;
 			}
 		}
 
@@ -429,22 +431,23 @@
 	.button {
 		position: relative;
 		display: inline-block;
-		border-radius: 0.35em;
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: #2d6df8;
+		border-color: rgb(0, 0, 0);
+		border-radius: 1.0em;
 		border: 0;
 		cursor: pointer;
 		@include vendor('background-image', ('linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15))', 'url("images/overlay.png")'));
 		@include vendor('transition', 'background-color 0.35s ease-in-out');
 
 		&:hover {
-			background-color: #9ececc;
+			background-color: #2794fa;
 		}
 
 		&:active {
-			background-color: #7eaeac;
+			background-color: #2794fa;
 		}
 	}
 
