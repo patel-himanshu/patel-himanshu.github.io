@@ -5,6 +5,7 @@
 
 <!-- Nav -->
 <nav id="nav">
+  <hr>
   <ul>
     {%- assign _pages = site.html_pages | where_exp: "page", "page.hide != true" -%}
     {%- unless _pages == null -%}
