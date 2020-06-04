@@ -124,7 +124,7 @@
 
 	b {
 		font-weight: 600;
-		color:  rgb(50, 41, 94);
+		color:  rgb(122, 48, 19);
 	}
 
 	strong {
@@ -462,7 +462,7 @@
 		@include vendor('transition', 'background-color 0.35s ease-in-out');
 
 		&:hover {
-			background-color: #3904f8;
+			background-color: #02abfa;
 			// box-shadow: 0 0.5em 0.85em -0.4em #66fc02;
 			transform: translateY(0.15em);
 		}

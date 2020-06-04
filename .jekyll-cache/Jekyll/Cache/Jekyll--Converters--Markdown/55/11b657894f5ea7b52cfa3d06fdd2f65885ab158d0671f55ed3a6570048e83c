@@ -1,6 +1,7 @@
-I"v<header>
-    <h2><u>Welcome to Jekyll!</u></h2>
-</header>
+I"‘<!-- 
+<header>
+    <h2><u><strong>Welcome to Jekyll!</strong></u></h2>
+</header> -->
 
 <p>This Jekyll theme lets you build as many of these sections as you want. They live in the _sections folder in your projectâ€™s root directory. For some examples, see the <a href="https://github.com/chrisbobbe/jekyll-theme-prologue">GitHub repository</a>. Just be sure to add some <a href="https://jekyllrb.com/docs/frontmatter/">frontmatter</a> to each section.</p>
 
