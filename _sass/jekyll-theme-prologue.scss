@@ -60,7 +60,7 @@
 /* Basic */
 
 	body {
-		background: #fff;
+		background: #c3d1ff;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 20pt;
 		font-weight: 400;
@@ -138,7 +138,7 @@
 		outline: 0;
 
 		&:hover {
-			color: #E27689;
+			color: rgb(253, 0, 0);
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 	}
@@ -721,11 +721,13 @@
 			}
 
 			&.shade-one {
-				background-color: #81918E;
+				background-color: #ffd78e;
+				// background-color: #81918E;
 			}
 
 			&.shade-two {
-				background-color: #bdfd98;
+				background-color: #ffd78e;
+				// background-color: #bdfd98;
 			}
 
 			&.shade-three {
@@ -733,7 +735,8 @@
 			}
 
 			&.shade-four {
-				background-color: #f2f897c5;
+				background-color: #ffd78e;
+				// background-color: #f2f897c5;
 			}
 		}
 	}
