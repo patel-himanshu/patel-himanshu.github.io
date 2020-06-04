@@ -1,0 +1,42 @@
+---
+title: Contact Me
+icon: fa-envelope
+order: 5
+---
+
+<div class="container-fluid align-items-center">
+  <div class="row">
+      <center>
+            <table class="table table-hover">
+                <tr>
+                    <td><b>E-mail</b></td><td>:</td>
+                    <td><a href="mailto:hpatel27299@gmail.com">hpatel27299@gmail.com</a>,
+                        <a href="mailto:himanshup18100@iiitnr.edu.in">himanshup18100@iiitnr.edu.in</a></td>
+                </tr>
+                <tr>
+                  <td><b>Contact</b></td><td>:</td>
+                  <td><a href="tel:+917999636520">+91 79996 36520</a></td>
+                </tr>
+                <tr>
+                  <td><b>Address</b></td><td>:</td>
+                  <td>Bhabha House, IIIT Naya Raipur, Plot No. - 7, Sector 24, Naya Raipur, Chhattisgarh, India - 493661</td>
+                </tr>
+            </table>
+      </center>
+  </div>
+</div>
+
+<form method="post" action="https://formspree.io/{{ site.email }}">
+  <div class="row">
+    <div class="form-element 6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" required="required" /></div>
+    <div class="form-element 6u$ 12u$(mobile)"><input type="email" name="_replyto" placeholder="E-mail" required="required" /></div>
+    <div class="form-element 12u$"><input type="text" name="subject" placeholder="Subject" required="required" /></div>
+    <input type="text" name="_gotcha" style="display:none" />
+    <div class="form-element 12u$">
+      <textarea name="message" placeholder="Message"></textarea>
+    </div>
+    <div class="form-element 12u$">
+      <input type="submit" value="Send Message" />
+    </div>
+  </div>
+</form>
