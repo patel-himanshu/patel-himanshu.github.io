@@ -82,12 +82,13 @@
 	}
 
 	p {
+		font-size: larger;
 		color: #333;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: rgb(0, 36, 197);
-		font-weight: 600;
+		font-weight: 400;
 		line-height: 1.5em;
 	}
 
@@ -121,9 +122,14 @@
 		margin: 2em 0 0 0;
 	}
 
-	strong, b {
-		font-weight: 300;
-		color: #666;
+	b {
+		font-weight: 600;
+		color:  rgb(50, 41, 94);
+	}
+
+	strong {
+		font-weight: 600;
+		color:  rgb(0, 36, 197);
 	}
 
 	em, i {
@@ -190,6 +196,7 @@
 	}
 
 	p, ul, ol, dl, table {
+		font-size: larger;
 		margin-bottom: 2em;
 	}
 
@@ -455,7 +462,9 @@
 		@include vendor('transition', 'background-color 0.35s ease-in-out');
 
 		&:hover {
-			background-color: #2794fa;
+			background-color: #3904f8;
+			// box-shadow: 0 0.5em 0.85em -0.4em #66fc02;
+			transform: translateY(0.15em);
 		}
 
 		&:active {
