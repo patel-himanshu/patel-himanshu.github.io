@@ -197,7 +197,7 @@
 
 	p, ul, ol, dl, table {
 		font-size: larger;
-		margin-bottom: 2em;
+		// margin-bottom: 1em;
 	}
 
 	dl {
@@ -468,7 +468,7 @@
 		}
 
 		&:active {
-			background-color: #2794fa;
+			background-color: #fa2727;
 		}
 	}
 
@@ -730,7 +730,7 @@
 			}
 
 			&.shade-one {
-				background-color: #ffd78e;
+				background-color: #ffe1a8;
 				// background-color: #81918E;
 			}
 
@@ -1143,4 +1143,20 @@
 				}
 			}
 
+	}
+
+/* Particles */
+
+	#particles-js {
+		background:#060916;
+		position: relative;
+		display: flex;
+		vertical-align: bottom;
+		width: 100%;
+		// height: 100%;
+		// min-height: 100vh;
+		// background-image: url("");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
 	}
