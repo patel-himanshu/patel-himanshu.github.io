@@ -130,6 +130,7 @@
 	strong {
 		font-weight: 600;
 		color:  rgb(0, 36, 197);
+		text-shadow: 2px 2px 2px #ff7b00;
 	}
 
 	em, i {
@@ -440,7 +441,7 @@
 			background: #eee;
 		}
 		
-		// tr:hover {background-color: #55a50b;}
+		tr:hover {background-color: #f8c593;}
 	}
 
 /* Button */
@@ -467,9 +468,10 @@
 		@include vendor('transition', 'background-color 0.35s ease-in-out');
 
 		&:hover {
-			background-color: #02abfa;
+			// background-color: #02abfa;
 			// box-shadow: 0 0.5em 0.85em -0.4em #66fc02;
 			transform: translateY(0.15em);
+			box-shadow: 0 8px 8px 0 rgba(241, 190, 20, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 		}
 
 		&:active {
@@ -497,6 +499,20 @@
 			}
 		}
 	}
+
+/* Card */
+	.card {
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		// margin: 2rem 0;
+		box-shadow: .3rem 1.5rem 3rem #8f6e57;
+		transition: transform .5s;
+	}
+
+	.card:hover {transform: scale(1.05);}
 
 /* Icons */
 
@@ -639,7 +655,13 @@
 							color: #f09826;
 						}
 					}
+
 				}
+					a:hover 
+					{
+						background-color: #2b2b2b;
+						color: white;
+					}
 			}
 		}
 	}
