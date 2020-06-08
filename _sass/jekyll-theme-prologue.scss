@@ -130,7 +130,13 @@
 	strong {
 		font-weight: 600;
 		color:  rgb(0, 36, 197);
-		text-shadow: 2px 2px 2px #ff7b00;
+		text-shadow: 2px 2px 2px #ff7b00;	
+	}
+
+	u {
+		strong {
+			font-size: 1.5em;
+		}
 	}
 
 	em, i {
@@ -423,6 +429,10 @@
 		
 		td {
 			padding: 0 0.2em 0 0.2em;
+
+			a:hover {
+				font-size: 1.2em;
+			}
 		}
 		
 		th {
@@ -441,7 +451,9 @@
 			background: #eee;
 		}
 		
-		tr:hover {background-color: #f8c593;}
+		tr:hover {
+			background-color: #ffca3a;
+		}
 	}
 
 /* Button */
@@ -454,7 +466,7 @@
 		position: relative;
 		display: inline-block;
 		color: #fff !important;
-		font-size: medium;
+		font-size: 0.8em;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
 		background-color: #2d6df8;
@@ -468,10 +480,11 @@
 		@include vendor('transition', 'background-color 0.35s ease-in-out');
 
 		&:hover {
-			// background-color: #02abfa;
-			// box-shadow: 0 0.5em 0.85em -0.4em #66fc02;
+			// font-size: 0.8em;
+			background-color: #02abfa;
 			transform: translateY(0.15em);
-			box-shadow: 0 8px 8px 0 rgba(241, 190, 20, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+			// box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+			box-shadow: .3rem 1.5rem 3rem #8f6e57;
 		}
 
 		&:active {
@@ -757,21 +770,29 @@
 			}
 
 			&.shade-one {
-				background-color: #ffe1a8;
+				background-image: url(images/bg3.jpg);
+				background-repeat: repeat;
+				// background-color: #ffe1a8;
 				// background-color: #81918E;
 			}
 
 			&.shade-two {
-				background-color: #ffd78e;
+				background-image: url(images/bg3.jpg);
+				background-repeat: repeat;
+				// background-color: #ffd78e;
 				// background-color: #bdfd98;
 			}
 
 			&.shade-three {
-				background-color: #ffd78e;
+				background-image: url(images/bg3.jpg);
+				background-repeat: repeat;
+				// background-color: #ffd78e;
 			}
 
 			&.shade-four {
-				background-color: #ffd78e;
+				background-image: url(images/bg3.jpg);
+				background-repeat: repeat;
+				// background-color: #ffd78e;
 				// background-color: #f2f897c5;
 			}
 		}
@@ -1182,8 +1203,10 @@
 		width: 100%;
 		// height: 100%;
 		// min-height: 100vh;
-		background-image: url("assets/images/space.jpg");
+		background-image: url(images/space.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
+		// box-shadow: 0 0 2em 0 #c3d1ff;
+		// border-radius: 2em;
 	}
