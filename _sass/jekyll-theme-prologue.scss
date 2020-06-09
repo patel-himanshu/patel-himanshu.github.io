@@ -60,7 +60,8 @@
 /* Basic */
 
 	body {
-		background: #c3d1ff;
+		background-color: rgba(229, 247, 150, 0.795);
+		// background: #c3d1ff;
 		// font-family: 'Source Sans Pro', sans-serif;
 		font-family: 'Times New Roman', Times, serif;
 		font-size: 20pt;
@@ -434,7 +435,8 @@
 		// }
 		
 		td {
-			padding: 0.2em 0.2em 0.2em 0.2em;
+			padding: 0.2em 0.4em 0.2em 0.4em;
+			word-wrap: break-word;
 
 			a:hover {
 				font-size: 1.1em;
@@ -1146,7 +1148,7 @@
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 14pt;
+				font-size: 13pt;
 			}
 
 			h2 {
@@ -1157,6 +1159,10 @@
 
 			.container {
 				padding: 0 15px 0 15px;
+			}
+
+			.container-fluid {
+				padding: 0 0.01em 0 0.01em;
 			}
 
 		/* List */
