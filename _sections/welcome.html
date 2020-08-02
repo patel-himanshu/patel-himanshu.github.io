@@ -12,16 +12,16 @@ order: 1
 <footer>
   <h2>Hi, I'm <strong style="text-shadow: 2px 2px 5px #f87b06;">Himanshu Patel</strong>!</h2>
   {%- if site.linkedin_url -%}
-  <button><a href="{{- site.linkedin_url -}}" class="icon-b fa-linkedin-in">&nbsp;&nbsp;LinkedIn</a></button> &nbsp;
+  <a href="{{- site.linkedin_url -}}"><button><span class="icon-b fa-linkedin-in"></span>&nbsp;&nbsp;LinkedIn</button></a> &nbsp;
   {%- endif -%}
   {%- if site.github_url -%}
-  <button><a href="{{- site.github_url -}}" class="icon-b fa-github">&nbsp;&nbsp;GitHub</a></button> &nbsp;
+  <a href="{{- site.github_url -}}"><button><span class="icon-b fa-github"></span>&nbsp;&nbsp;GitHub</button></a> &nbsp;
   {%- endif -%}
   {%- if site.twitter_url -%}
-  <button><a href="{{- site.twitter_url -}}" class="icon-b fa-twitter">&nbsp;&nbsp;Twitter</a></button> &nbsp;
+  <a href="{{- site.twitter_url -}}"><button><span class="icon-b fa-twitter"></span>&nbsp;&nbsp;Twitter</button></a> &nbsp;
   {%- endif -%} 
   <br>
-  <button><a href="assets/Himanshu Patel.pdf" target="_blank">Download CV</a></button>
+  <a href="assets/Himanshu Patel.pdf" target="_blank"><button>Download CV</button></a>
   <br>
   <a href="#about-me" class="icon fa fa-chevron-circle-down scrolly"></a>
   <!-- <a href="#about-me" class="button scrolly">Let's Get Started</a> -->
