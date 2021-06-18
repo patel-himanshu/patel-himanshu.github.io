@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Sidebar = (props) => {
+const AppbarDrawer = (props) => {
   const classes = useStyles();
   const theme = useTheme();
 
@@ -156,7 +156,7 @@ const Sidebar = (props) => {
         </div>
         <Divider />
         <List>
-          {props.sidebarOptions.map(({ label, icon, path }) => (
+          {props.drawerOptions.map(({ label, icon, path }) => (
             <NavLink
               key={label}
               to={path}
@@ -196,4 +196,4 @@ const Sidebar = (props) => {
   );
 };
 
-export default Sidebar;
+export default AppbarDrawer;

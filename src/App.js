@@ -12,17 +12,16 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import ViewCompactIcon from "@material-ui/icons/ViewCompact";
 import WorkIcon from "@material-ui/icons/Work";
 
-import Sidebar from "./components/Sidebar";
-import AboutMe from "./pages/AboutMe";
-import Blogs from "./pages/Blogs";
-import ContactMe from "./pages/ContactMe";
-import Experience from "./pages/Experience";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Skills from "./pages/Skills";
+import AppbarDrawer from "./components/AppbarDrawer";
+import AboutMe from "./pages/AboutMe/AboutMe";
+import Blogs from "./pages/Blogs/Blogs";
+import ContactMe from "./pages/ContactMe/ContactMe";
+import Experience from "./pages/Experience/Experience";
+import Home from "./pages/Home/Home";
+import Projects from "./pages/Projects/Projects";
 import theme from "./styling/theme";
 
-const sidebarOptions = [
+const drawerOptions = [
   {
     label: "Home",
     icon: <HomeIcon style={{ color: "#8F5693" }} />,
@@ -78,14 +77,13 @@ function App() {
 
   return (
     <ThemeProvider theme={customTheme}>
-      <Sidebar
-        sidebarOptions={sidebarOptions}
+      <AppbarDrawer
+        drawerOptions={drawerOptions}
         socialMediaHandles={socialMediaHandles}
       >
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about-me" component={AboutMe} />
-          <Route exact path="/skills" component={Skills} />
           <Route exact path="/experience" component={Experience} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/blogs" component={Blogs} />
@@ -94,7 +92,7 @@ function App() {
             <Redirect to="/" />
           </Route>
         </Switch>
-      </Sidebar>
+      </AppbarDrawer>
     </ThemeProvider>
   );
 }

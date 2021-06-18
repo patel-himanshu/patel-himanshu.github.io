@@ -1,0 +1,9 @@
+section {
+  height: 100vh;
+  background: rgb(255, 248, 179);
+  background: radial-gradient(
+    circle,
+    rgba(255, 248, 179, 1) 22%,
+    rgba(190, 219, 255, 1) 100%
+  );
+}
