@@ -28,6 +28,10 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
   },
   appBar: {
+    // background: "#245A99",
+    // background: "-webkit-linear-gradient(top left, #245A99, #3A8BA5)",
+    // background: "-moz-linear-gradient(top left, #245A99, #3A8BA5)",
+    background: "linear-gradient(to bottom right, #245A99, #3A8BA5)",
     zIndex: theme.zIndex.drawer + 1,
     transition: theme.transitions.create(["width", "margin"], {
       easing: theme.transitions.easing.sharp,
@@ -47,6 +51,9 @@ const useStyles = makeStyles((theme) => ({
   },
   hide: {
     display: "none",
+  },
+  paper: {
+    backgroundColor: "#EAEAEA",
   },
   drawer: {
     width: drawerWidth,
@@ -77,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    // padding: theme.spacing(3),
   },
   socials: {
     marginTop: "auto",
@@ -138,7 +145,7 @@ const AppbarDrawer = (props) => {
           [classes.drawerClose]: !drawerOpen,
         })}
         classes={{
-          paper: clsx({
+          paper: clsx(classes.paper, {
             [classes.drawerOpen]: drawerOpen,
             [classes.drawerClose]: !drawerOpen,
           }),
