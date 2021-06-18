@@ -29,9 +29,9 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     // background: "#245A99",
-    // background: "-webkit-linear-gradient(top left, #245A99, #3A8BA5)",
-    // background: "-moz-linear-gradient(top left, #245A99, #3A8BA5)",
-    background: "linear-gradient(to bottom right, #245A99, #3A8BA5)",
+    // background: "-webkit-linear-gradient(top left, #245a99, #3a8ba5)",
+    // background: "-moz-linear-gradient(top left, #245a99, #3a8ba5)",
+    background: "linear-gradient(to bottom right, #245a99, #3a8ba5)",
     zIndex: theme.zIndex.drawer + 1,
     transition: theme.transitions.create(["width", "margin"], {
       easing: theme.transitions.easing.sharp,
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     display: "none",
   },
   paper: {
-    backgroundColor: "#EAEAEA",
+    backgroundColor: "#eaeaea",
   },
   drawer: {
     width: drawerWidth,

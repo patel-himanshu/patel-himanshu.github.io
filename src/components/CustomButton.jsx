@@ -13,12 +13,12 @@ const CustomButton = (props) => {
       outline: "none",
       padding: padding || "8px 32px",
       "&:hover": {
-        backgroundColor: palette.primary2,
+        backgroundColor: palette.primary0,
       },
       textTransform: "none",
     },
     label: {
-      color: palette.white,
+      color: "white",
       fontSize: fontSizes.normal,
       fontWeight: fontWeights.semibold,
     },
