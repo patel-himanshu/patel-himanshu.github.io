@@ -3,7 +3,7 @@ import { fontSizes, fontWeights } from "../styling/typography";
 import palette from "../styling/palette";
 
 const CustomButton = (props) => {
-  const { children, padding, ...rest } = props;
+  const { children, padding, size, weight, ...rest } = props;
 
   const StyledButton = withStyles((theme) => ({
     root: {
@@ -19,8 +19,8 @@ const CustomButton = (props) => {
     },
     label: {
       color: "white",
-      fontSize: fontSizes.normal,
-      fontWeight: fontWeights.semibold,
+      fontSize: fontSizes[size] || "1.25rem",
+      fontWeight: fontWeights[weight] || weight || "normal",
     },
   }))(Button);
 

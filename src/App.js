@@ -24,17 +24,17 @@ import theme from "./styling/theme";
 const drawerOptions = [
   {
     label: "Home",
-    icon: <HomeIcon style={{ color: "#8F5693" }} />,
+    icon: <HomeIcon style={{ color: "#8f5693" }} />,
     path: "/home",
   },
   {
     label: "About Me",
-    icon: <PersonIcon style={{ color: "#EFB104" }} />,
+    icon: <PersonIcon style={{ color: "#efB104" }} />,
     path: "/about-me",
   },
   {
     label: "Experience",
-    icon: <WorkIcon style={{ color: "#B97E53" }} />,
+    icon: <WorkIcon style={{ color: "#b97e53" }} />,
     path: "/experience",
   },
   {
@@ -44,12 +44,12 @@ const drawerOptions = [
   },
   {
     label: "Blogs",
-    icon: <MenuBookIcon style={{ color: "#EC4134" }} />,
+    icon: <MenuBookIcon style={{ color: "#ec4134" }} />,
     path: "/blogs",
   },
   {
     label: "Contact Me",
-    icon: <EmailIcon style={{ color: "#7C7C7C" }} />,
+    icon: <EmailIcon style={{ color: "#7c7c7c" }} />,
     path: "/contact-me",
   },
 ];
@@ -57,17 +57,17 @@ const drawerOptions = [
 const socialMediaHandles = [
   {
     label: "GitHub",
-    icon: <GitHubIcon style={{ color: "#24292E" }} />,
+    icon: <GitHubIcon style={{ color: "#24292e" }} />,
     path: "https://github.com/patel-himanshu",
   },
   {
     label: "LinkedIn",
-    icon: <LinkedInIcon style={{ color: "#0A66C2" }} />,
+    icon: <LinkedInIcon style={{ color: "#0a66c2" }} />,
     path: "https://linkedin.com/in/patel-himanshu",
   },
   {
     label: "Twitter",
-    icon: <TwitterIcon style={{ color: "#1A91DA" }} />,
+    icon: <TwitterIcon style={{ color: "#1a91da" }} />,
     path: "https://twitter.com/Himanshu27299",
   },
 ];
