@@ -1,9 +1,49 @@
-section {
-  height: 100vh;
-  background: rgb(255, 248, 179);
-  background: radial-gradient(
-    circle,
-    rgba(255, 248, 179, 1) 22%,
-    rgba(190, 219, 255, 1) 100%
-  );
+form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+legend {
+  background-color: #000;
+  color: #fff;
+  padding: 0.25rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+label {
+  display: inline-block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0.25rem;
+}
+
+input,
+textarea {
+  color: #666;
+  font-family: "PT Serif, serif";
+  font-size: 1.25rem;
+  display: block;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border: 3px solid rgb(170, 82, 252);
+  /* border-bottom: 3px solid blueviolet; */
+}
+
+textarea {
+  height: 7em;
+  resize: none;
+  overflow: auto;
+}
+
+@media only screen and (min-width: 800px) {
+  form {
+    width: 80%;
+  }
 }
