@@ -85,7 +85,11 @@ const Skills = () => {
             <Card
               key={elem.category}
               variant="outlined"
-              style={{ backgroundColor: "#eaeaea", margin: "0.5rem" }}
+              style={{
+                backgroundColor: "#eaeaea",
+                boxShadow: "0 0 5px grey",
+                margin: "0.5rem",
+              }}
             >
               <CardContent>
                 <strong>{elem.category}</strong>

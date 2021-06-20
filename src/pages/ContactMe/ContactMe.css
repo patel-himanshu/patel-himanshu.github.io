@@ -3,9 +3,16 @@ form {
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 800px) {
+  form {
+    width: 80%;
+  }
+}
+
 fieldset {
   border: 2px solid black;
   border-radius: 8px;
+  box-shadow: 2px 0 20px rgb(2, 10, 117);
 }
 
 legend {
@@ -40,10 +47,4 @@ textarea {
   height: 7em;
   resize: none;
   overflow: auto;
-}
-
-@media only screen and (min-width: 800px) {
-  form {
-    width: 80%;
-  }
 }
