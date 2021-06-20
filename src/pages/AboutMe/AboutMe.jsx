@@ -12,8 +12,8 @@ const AboutMe = () => {
         <header>
           <span className="section-header">About Me</span>
         </header>
-        <Grid container>
-          <Grid item md={5}>
+        <Grid container style={{ justifyContent: "center" }}>
+          <Grid item md={4}>
             <p>
               My name is Himanshu Patel. Currently, I am
               <ul>
@@ -29,11 +29,15 @@ const AboutMe = () => {
               <br />I am always eager to learn and explore new things.
             </p>
           </Grid>
-          <Grid item md={5}>
+          <Grid item md={3}>
             <img
               src={coding}
               alt="A person coding on laptop"
-              style={{ marginLeft: "auto", height: "16rem" }}
+              style={{
+                height: "15rem",
+                maxWidth: "16rem",
+                filter: "drop-shadow(0 0 5px grey)",
+              }}
             />
           </Grid>
         </Grid>
