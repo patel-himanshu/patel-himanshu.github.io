@@ -131,6 +131,7 @@ const AppbarDrawer = (props) => {
           <Typography variant="h6" noWrap>
             <Link to="/" style={{ color: "white", textDecoration: "none" }}>
               Himanshu Patel
+              {/* <span style={{ fontSize: "0.85rem" }}>Full Stack Developer</span> */}
             </Link>
           </Typography>
 

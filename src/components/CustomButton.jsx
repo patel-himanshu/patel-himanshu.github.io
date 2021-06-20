@@ -12,10 +12,12 @@ const CustomButton = (props) => {
       border: 0,
       outline: "none",
       padding: padding || "8px 32px",
-      "&:hover": {
-        backgroundColor: palette.primary0,
-      },
       textTransform: "none",
+      transition: "0.3s",
+      "&:hover": {
+        backgroundColor: palette.secondary2,
+        // boxShadow: `0 0 15px ${palette.secondary2}`,
+      },
     },
     label: {
       color: "white",

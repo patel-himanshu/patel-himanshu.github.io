@@ -31,7 +31,18 @@ article {
 }
 
 .page-content {
+  overflow: auto;
   padding: 1.5rem;
+}
+
+.page-section {
+  margin: 0;
+}
+
+@media only screen and (min-width: 800px) {
+  .page-section {
+    margin: 1rem 3rem;
+  }
 }
 
 header {
