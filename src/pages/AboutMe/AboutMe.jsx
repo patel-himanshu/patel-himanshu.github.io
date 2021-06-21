@@ -1,6 +1,6 @@
 import "./AboutMe.css";
 import Skills from "./Skills";
-import coding from "../../assets/coding.png";
+import coding from "../../assets/coding1.png";
 
 import Grid from "@material-ui/core/Grid";
 
@@ -13,7 +13,7 @@ const AboutMe = () => {
           <span className="section-header">About Me</span>
         </header>
         <Grid container style={{ justifyContent: "center" }}>
-          <Grid item md={4}>
+          <Grid item md={5}>
             <p>
               My name is Himanshu Patel. Currently, I am
               <ul>
@@ -29,15 +29,11 @@ const AboutMe = () => {
               <br />I am always eager to learn and explore new things.
             </p>
           </Grid>
-          <Grid item md={3}>
+          <Grid item md={4}>
             <img
               src={coding}
               alt="A person coding on laptop"
-              style={{
-                height: "15rem",
-                maxWidth: "16rem",
-                filter: "drop-shadow(0 0 5px grey)",
-              }}
+              className="about-me-image"
             />
           </Grid>
         </Grid>

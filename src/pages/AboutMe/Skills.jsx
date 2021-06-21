@@ -86,13 +86,16 @@ const Skills = () => {
               key={elem.category}
               variant="outlined"
               style={{
-                backgroundColor: "#eaeaea",
-                boxShadow: "0 0 5px grey",
+                backgroundColor: "#e7fcd2",
+                boxShadow: "0 0 10px grey",
+                border: "1px solid green",
                 margin: "0.5rem",
               }}
             >
               <CardContent>
-                <strong>{elem.category}</strong>
+                <strong>
+                  <em>{elem.category}</em>
+                </strong>
                 <hr />
                 <div>
                   <List style={{ padding: "0" }}>

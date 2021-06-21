@@ -1,0 +1,13 @@
+.about-me-image {
+  /* display: flex; */
+  /* align-items: center; */
+  margin: 0.5rem 0;
+  max-width: 16rem;
+  filter: drop-shadow(0 0 5px grey);
+}
+
+@media only screen and (min-width: 800px) {
+  .about-me-image {
+    max-width: 32rem;
+  }
+}

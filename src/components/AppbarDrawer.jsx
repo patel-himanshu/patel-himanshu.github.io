@@ -53,7 +53,8 @@ const useStyles = makeStyles((theme) => ({
     display: "none",
   },
   paper: {
-    backgroundColor: "#eaeaea",
+    backgroundColor: "#F6E6E0",
+    boxShadow: "0 0 20px black",
   },
   drawer: {
     width: drawerWidth,

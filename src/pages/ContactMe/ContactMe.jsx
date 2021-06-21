@@ -8,7 +8,9 @@ const ContactMe = () => {
     <article>
       <form method="POST" action="https://formspree.io/f/mbjqyqlz">
         <fieldset>
-          <legend>Contact Me</legend>
+          <legend>
+            <em>Contact Me</em>
+          </legend>
 
           <p>
             Please feel free to contact me regarding any questions, feedback or
@@ -16,22 +18,22 @@ const ContactMe = () => {
           </p>
 
           <label for="name">
-            Name <span style={{ color: "red" }}>*</span>
+            <strong>Name</strong> <span style={{ color: "red" }}>*</span>
           </label>
           <input type="text" id="name" name="name" required />
 
           <label for="email">
-            E-Mail <span style={{ color: "red" }}>*</span>
+            <strong>E-Mail</strong> <span style={{ color: "red" }}>*</span>
           </label>
           <input type="email" id="email" name="email" required />
 
           <label for="subject">
-            Subject <span style={{ color: "red" }}>*</span>
+            <strong>Subject</strong> <span style={{ color: "red" }}>*</span>
           </label>
           <input type="text" id="subject" name="subject" required />
 
           <label for="message">
-            Message <span style={{ color: "red" }}>*</span>
+            <strong>Message</strong> <span style={{ color: "red" }}>*</span>
           </label>
           {/* <textarea type="text" id="message" name="message" required /> */}
           <TextareaAutosize
