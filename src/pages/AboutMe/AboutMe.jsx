@@ -14,7 +14,7 @@ const AboutMe = () => {
         </header>
         <Grid container style={{ justifyContent: "center" }}>
           <Grid item md={5}>
-            <p>
+            <div>
               My name is Himanshu Patel. Currently, I am
               <ul>
                 <li>
@@ -27,7 +27,7 @@ const AboutMe = () => {
               </ul>
               I enjoy writing code, especially in Python and JavaScript.
               <br />I am always eager to learn and explore new things.
-            </p>
+            </div>
           </Grid>
           <Grid item md={4}>
             <img
@@ -45,9 +45,9 @@ const AboutMe = () => {
         <header>
           <span className="section-header">My Skills</span>
         </header>
-        <p>
+        <div>
           <Skills />
-        </p>
+        </div>
       </section>
 
       <br />

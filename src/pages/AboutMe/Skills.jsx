@@ -81,9 +81,8 @@ const Skills = () => {
     <Grid container>
       {data.map((elem) => {
         return (
-          <Grid item md={3} sm={6} xs={12}>
+          <Grid item md={3} sm={6} xs={12} key={elem.category}>
             <Card
-              key={elem.category}
               variant="outlined"
               style={{
                 backgroundColor: "#e7fcd2",
@@ -96,12 +95,19 @@ const Skills = () => {
                 <strong>
                   <em>{elem.category}</em>
                 </strong>
-                <hr />
+                <div
+                  style={{
+                    width: "100%",
+                    height: "1.5px",
+                    background: "#808080",
+                    overflow: "hidden",
+                  }}
+                />
                 <div>
                   <List style={{ padding: "0" }}>
                     {elem.skills.map((skill) => {
                       return (
-                        <ListItem disableGutters="true">
+                        <ListItem disableGutters key={skill.name}>
                           <ListItemIcon
                             style={{ width: "100px", marginRight: "1rem" }}
                           >
