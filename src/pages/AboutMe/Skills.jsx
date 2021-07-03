@@ -109,7 +109,7 @@ const Skills = () => {
                       return (
                         <ListItem disableGutters key={skill.name}>
                           <ListItemIcon
-                            style={{ width: "100px", marginRight: "1rem" }}
+                            style={{ width: "100px", marginRight: "0.5rem" }}
                           >
                             <img
                               src={skill.icon}
