@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import Grid from "@material-ui/core/Grid";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
@@ -71,15 +72,24 @@ const Experience = () => {
                   onChange={handleChange(`${internship.label}`)}
                 >
                   <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                    <Typography className={classes.heading}>
-                      {internship.role}
-                    </Typography>
-                    <Typography
-                      className={classes.secondaryHeading}
-                      style={{ margin: "auto" }}
-                    >
-                      <strong>{internship.company}</strong>
-                    </Typography>
+                    <Grid container>
+                      <Grid item lg={2} md={1} xs={4}>
+                        <Typography
+                          className={classes.heading}
+                          style={{ margin: "auto" }}
+                        >
+                          <strong>{internship.company}</strong>
+                        </Typography>
+                      </Grid>
+                      <Grid item>
+                        <Typography
+                          className={classes.secondaryHeading}
+                          style={{ margin: "auto" }}
+                        >
+                          {internship.role}
+                        </Typography>
+                      </Grid>
+                    </Grid>
                   </AccordionSummary>
                   <AccordionDetails>
                     <ul className="accordian-details">
