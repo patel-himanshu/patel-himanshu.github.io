@@ -68,6 +68,8 @@ const AboutMe = () => {
       <section className="page-section">
         <header>
           <span className="section-header">My Skills</span>
+          {/* <h2 className="subsection-header">My Skills</h2>
+          <div className="underline" /> */}
         </header>
         <div>
           <Skills />
@@ -79,6 +81,8 @@ const AboutMe = () => {
       <section className="page-section">
         <header>
           <span className="section-header">Education</span>
+          {/* <h2 className="subsection-header">Education</h2>
+          <div className="underline" /> */}
         </header>
         <Grid
           container

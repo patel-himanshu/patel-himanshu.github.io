@@ -54,7 +54,7 @@ const Experience = () => {
   };
 
   return (
-    <>
+    <article className="page-content">
       <section className="page-section">
         <header>
           <span className="section-header">Experience</span>
@@ -117,7 +117,7 @@ const Experience = () => {
           </ul>
         </section>
       </section>
-    </>
+    </article>
   );
 };
 

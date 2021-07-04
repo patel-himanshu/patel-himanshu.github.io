@@ -6,6 +6,9 @@ import CustomButton from "../../components/CustomButton";
 const ContactMe = () => {
   return (
     <article>
+      {/* <header>
+        <span className="section-header">Contact Me</span>
+      </header> */}
       <form method="POST" action="https://formspree.io/f/mbjqyqlz">
         <fieldset>
           <legend>
@@ -40,7 +43,7 @@ const ContactMe = () => {
             type="text"
             id="message"
             name="message"
-            rowsMin="6"
+            rowsMin="5"
             required
           />
 
