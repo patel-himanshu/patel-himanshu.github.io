@@ -45,6 +45,11 @@ const internshipDetails = [
   },
 ];
 
+const positionsOfResponsibility = [
+  "Core Member of The Society of Coders, IIIT-Naya Raipur",
+  "Website Manager of college’s website for Student Activity Center and IEEE Student Branch",
+];
+
 const Experience = () => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
@@ -108,13 +113,22 @@ const Experience = () => {
         <section>
           <h2 className="subsection-header">Positions of Responsibility</h2>
           <div className="underline" />
-          <ul className="positions-responsibility">
-            <li>Core Member of The Society of Coders, IIIT-Naya Raipur</li>
-            <li>
-              Website Manager of college’s website for Student Activity Center
-              and IEEE Student Branch
-            </li>
-          </ul>
+          {/* <ul className="positions-responsibility">
+            {positionsOfResponsibility.map((position) => {
+              return <li>{position}</li>;
+            })}
+          </ul> */}
+          {positionsOfResponsibility.map((position) => {
+            return (
+              <Accordion>
+                <AccordionSummary>
+                  <Grid container>
+                    <Typography variant="subtitle2">{position}</Typography>
+                  </Grid>
+                </AccordionSummary>
+              </Accordion>
+            );
+          })}
         </section>
       </section>
     </article>

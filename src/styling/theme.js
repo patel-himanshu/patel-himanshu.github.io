@@ -4,10 +4,7 @@ import typography from "./typography";
 const theme = {
   palette: {
     primary: {
-      main: palette.primary1,
-    },
-    secondary: {
-      main: palette.secondary1,
+      main: palette.primary2,
     },
   },
   typography: {

@@ -15,8 +15,8 @@ const CustomButton = (props) => {
       textTransform: "none",
       transition: "0.3s",
       "&:hover": {
-        backgroundColor: palette.secondary2,
-        // boxShadow: `0 0 15px ${palette.secondary2}`,
+        backgroundColor: palette.primary0,
+        // boxShadow: `0 0 15px ${palette.primary3}`,
       },
     },
     label: {
