@@ -39,6 +39,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: #1831f2;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

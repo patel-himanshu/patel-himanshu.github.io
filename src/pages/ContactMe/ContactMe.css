@@ -1,5 +1,10 @@
+.contact-table {
+  margin: 1rem auto;
+  /* background-color: #e2e2e2; */
+}
+
 form {
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
 }
 
