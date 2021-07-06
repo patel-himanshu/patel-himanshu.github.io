@@ -2,7 +2,7 @@ div.MuiAccordion-root {
   border-radius: 8px;
   border: 1px solid rgb(202, 101, 101);
   background-color: #faeecb;
-  box-shadow: 0 0 5px brown;
+  box-shadow: 0 0 2px brown;
   margin: 0.5rem 0;
 }
 

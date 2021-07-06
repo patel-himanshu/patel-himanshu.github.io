@@ -9,8 +9,10 @@ const Blogs = () => {
           <span className="section-header">Blogs</span>
         </header>
         <div style={{ textAlign: "center" }}>
-          Sorry, I'm currently working on this section. Return after a few days
-          to see what's new.
+          Sorry, I'm currently working on this section.
+          <br />
+          Return after a few days to see what's new.
+          <br />
           <br />
           Return to <Link to="/">Homepage</Link>.
         </div>

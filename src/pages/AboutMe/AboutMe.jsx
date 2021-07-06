@@ -1,11 +1,11 @@
-import "./AboutMe.css";
-import Skills from "./Skills";
-import coding from "../../assets/coding1.png";
-
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
+
+import coding from "../../assets/coding1.png";
+import Skills from "./Skills";
+import "./AboutMe.css";
 
 const education = [
   {
@@ -45,7 +45,7 @@ const AboutMe = () => {
                   👨🏼‍🎓 a final-year CSE undergrad at IIIT Naya Raipur (India)
                 </li>
                 <li>💼 working on getting a job/internship</li>
-                <li>💻 primarily interested in full-stack development</li>
+                <li>💻 interested in full-stack development</li>
                 <li>🧰 learning React and Django</li>
                 <li>👩‍💻 trying to become more involved in open source</li>
               </ul>
