@@ -1,0 +1,145 @@
+.my-photo {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  /* border: 10px solid purple; */
+  box-shadow: 0 0 20px black;
+  transition: transform 0.2s;
+}
+
+.my-photo:hover {
+  transform: scale(1.05);
+}
+
+p.introduction {
+  font-size: 1.75rem;
+}
+
+span.my-name {
+  color: #1751c7;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 960px) {
+  .my-photo {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  p.introduction {
+    font-size: 1.15rem;
+    margin-left: 1rem;
+  }
+
+  span.my-name {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .my-photo {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  p.introduction {
+    font-size: 1.15rem;
+    margin-left: 0;
+  }
+
+  span.my-name {
+    font-size: 2.25rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  p.introduction {
+    font-size: 1.1rem;
+    padding: 0.25rem 1.25rem 0.25rem 0.75rem;
+  }
+}
+
+span.main-container-flip {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+.container-flip {
+  height: 37px;
+}
+
+.container-flip span {
+  position: absolute;
+  white-space: nowrap;
+  opacity: 0;
+  -webkit-animation: rotate-word 10s linear infinite;
+  animation: rotate-word 10s linear infinite;
+}
+
+.container-flip span:nth-child(2) {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.container-flip span:nth-child(3) {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.container-flip span:nth-child(4) {
+  -webkit-animation-delay: 7.5s;
+  animation-delay: 7.5s;
+}
+
+@keyframes rotate-word {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  4% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  19% {
+    opacity: 0;
+  }
+  20% {
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.flip {
+  width: 100%;
+}
+
+.flip::after {
+  content: "";
+  display: inline-block;
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}

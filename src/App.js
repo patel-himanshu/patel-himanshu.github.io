@@ -70,7 +70,7 @@ const socialMediaHandles = [
   {
     label: "Twitter",
     icon: <TwitterIcon style={{ color: "#1a91da" }} />,
-    path: "https://twitter.com/Himanshu27299",
+    path: "https://twitter.com/_Patel_Himanshu",
   },
 ];
 
