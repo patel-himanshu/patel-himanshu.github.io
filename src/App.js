@@ -24,7 +24,7 @@ import theme from "./styling/theme";
 const drawerOptions = [
   {
     label: "Home",
-    icon: <HomeIcon style={{ color: "#8f5693" }} />,
+    icon: <HomeIcon style={{ color: "#3F51B5" }} />,
     path: "/home",
   },
   {
@@ -40,8 +40,7 @@ const drawerOptions = [
   },
   {
     label: "Projects",
-    // icon: <ViewCompactIcon style={{ color: "#119326" }} />,
-    icon: <ViewCompactIcon style={{ color: "#3F51B5" }} />,
+    icon: <ViewCompactIcon style={{ color: "#8f5693" }} />,
     path: "/projects",
   },
   {
