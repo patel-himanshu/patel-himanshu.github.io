@@ -7,6 +7,8 @@
 
   scrollbar-width: auto;
   scrollbar-color: var(--thumbBG1) var(--scrollbarBG);
+
+  box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
