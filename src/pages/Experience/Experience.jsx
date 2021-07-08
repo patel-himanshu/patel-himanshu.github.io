@@ -7,6 +7,10 @@ import AccordionSummary from "@material-ui/core/AccordionSummary";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
+import {
+  internshipDetails,
+  positionsOfResponsibility,
+} from "./experienceDetails";
 import "./Experience.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -22,34 +26,6 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
   },
 }));
-
-const internshipDetails = [
-  {
-    label: "label1",
-    company: "Cartel101",
-    role: "Software Developer Intern",
-    details: [
-      "Work from Home (April 2021 - May 2021)",
-      "Worked on the front end of an Asset Performance Manager (APM) project, using React and Material-UI",
-      "Performed multiple API integrations on the front end, and used Redux for state management",
-    ],
-  },
-  {
-    label: "label2",
-    company: "ChaloPadhe",
-    role: "Software Developer Intern",
-    details: [
-      "Work from Home (August 2020 - October 2020)",
-      "Helped in the creation of multiple APIs using Django REST Framework",
-      "Helped in developing the front end of the website for the organization using Angular",
-    ],
-  },
-];
-
-const positionsOfResponsibility = [
-  "Core Member of The Society of Coders, IIIT-Naya Raipur",
-  "Website Manager of college’s website for Student Activity Center and IEEE Student Branch",
-];
 
 const Experience = () => {
   const classes = useStyles();
@@ -115,11 +91,6 @@ const Experience = () => {
         <section>
           <h2 className="subsection-header">Positions of Responsibility</h2>
           <div className="underline" />
-          {/* <ul className="positions-responsibility">
-            {positionsOfResponsibility.map((position) => {
-              return <li>{position}</li>;
-            })}
-          </ul> */}
           {positionsOfResponsibility.map((position) => {
             return (
               <Accordion key={position}>

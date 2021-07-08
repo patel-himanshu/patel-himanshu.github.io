@@ -4,29 +4,9 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
 import coding from "../../assets/coding1.png";
+import { education } from "./education";
 import Skills from "./Skills";
 import "./AboutMe.css";
-
-const education = [
-  {
-    institute: "IIIT, Naya Raipur (C.G.)",
-    degree: "B.Tech (Computer Science & Engineering)",
-    years: "2018 - Present",
-    grade: "CGPA: 8.87/10.00",
-  },
-  {
-    institute: "Delhi Public School, Bhilai (C.G.)",
-    degree: "Senior Secondary Level",
-    years: "2017",
-    grade: "Percentage: 85.2%",
-  },
-  {
-    institute: "Delhi Public School, Bhilai (C.G.)",
-    degree: "Secondary Level",
-    years: "2015",
-    grade: "CGPA: 10/10",
-  },
-];
 
 const AboutMe = () => {
   return (
