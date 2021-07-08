@@ -23,54 +23,56 @@ const ContactMe = () => {
               or suggestions that you may have.
             </div>
             <table className="contact-table">
-              <tr>
-                <td>E-Mail</td>
-                <td>:</td>
-                <td>
-                  <a href="mailto:hpatel27299@gmail.com">
-                    hpatel27299@gmail.com
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>GitHub</td>
-                <td>:</td>
-                <td>
-                  <a
-                    href="https://github.com/patel-himanshu"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @patel-himanshu
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>LinkedIn</td>
-                <td>:</td>
-                <td>
-                  <a
-                    href="https://linkedin.com/in/patel-himanshu"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @patel-himanshu
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>Twitter</td>
-                <td>:</td>
-                <td>
-                  <a
-                    href="https://twitter.com/_Patel_Himanshu"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    @_Patel_Himanshu
-                  </a>
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>E-Mail</td>
+                  <td>:</td>
+                  <td>
+                    <a href="mailto:hpatel27299@gmail.com">
+                      hpatel27299@gmail.com
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>GitHub</td>
+                  <td>:</td>
+                  <td>
+                    <a
+                      href="https://github.com/patel-himanshu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      @patel-himanshu
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>LinkedIn</td>
+                  <td>:</td>
+                  <td>
+                    <a
+                      href="https://linkedin.com/in/patel-himanshu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      @patel-himanshu
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Twitter</td>
+                  <td>:</td>
+                  <td>
+                    <a
+                      href="https://twitter.com/_Patel_Himanshu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      @_Patel_Himanshu
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </Grid>
 
@@ -80,21 +82,21 @@ const ContactMe = () => {
                 {/* <legend>
                   <em>Contact Me</em>
                 </legend> */}
-                <label for="name">
+                <label htmlFor="name">
                   <strong>Name</strong> <span style={{ color: "red" }}>*</span>
                 </label>
                 <input type="text" id="name" name="name" required />
-                <label for="email">
+                <label htmlFor="email">
                   <strong>E-Mail</strong>{" "}
                   <span style={{ color: "red" }}>*</span>
                 </label>
                 <input type="email" id="email" name="email" required />
-                <label for="subject">
+                <label htmlFor="subject">
                   <strong>Subject</strong>{" "}
                   <span style={{ color: "red" }}>*</span>
                 </label>
                 <input type="text" id="subject" name="subject" required />
-                <label for="message">
+                <label htmlFor="message">
                   <strong>Message</strong>{" "}
                   <span style={{ color: "red" }}>*</span>
                 </label>

@@ -74,12 +74,13 @@ const Experience = () => {
             {internshipDetails.map((internship) => {
               return (
                 <Accordion
+                  key={internship.label}
                   expanded={expanded === `${internship.label}`}
                   onChange={handleChange(`${internship.label}`)}
                 >
                   <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                     <Grid container>
-                      <Grid item lg={2} md={1} xs={4}>
+                      <Grid item lg={2} md={3} xs={4}>
                         <Typography
                           className={classes.heading}
                           style={{ margin: "auto" }}
@@ -100,7 +101,7 @@ const Experience = () => {
                   <AccordionDetails>
                     <ul className="accordian-details">
                       {internship.details.map((detail) => {
-                        return <li>{detail}</li>;
+                        return <li key={detail}>{detail}</li>;
                       })}
                     </ul>
                   </AccordionDetails>
@@ -121,7 +122,7 @@ const Experience = () => {
           </ul> */}
           {positionsOfResponsibility.map((position) => {
             return (
-              <Accordion>
+              <Accordion key={position}>
                 <AccordionSummary>
                   <Grid container>
                     <Typography variant="subtitle2">{position}</Typography>
