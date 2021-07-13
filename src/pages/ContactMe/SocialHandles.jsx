@@ -13,7 +13,12 @@ const SocialHandles = () => {
             <td>E-Mail</td>
             <td>:</td>
             <td>
-              <a href="mailto:hpatel27299@gmail.com">hpatel27299@gmail.com</a>
+              <a
+                href="mailto:hpatel27299@gmail.com"
+                className="underline-animation"
+              >
+                hpatel27299@gmail.com
+              </a>
             </td>
           </tr>
           <tr>
@@ -23,6 +28,7 @@ const SocialHandles = () => {
               <a
                 href="https://github.com/patel-himanshu"
                 target="_blank"
+                className="underline-animation"
                 rel="noopener noreferrer"
               >
                 @patel-himanshu
@@ -36,6 +42,7 @@ const SocialHandles = () => {
               <a
                 href="https://linkedin.com/in/patel-himanshu"
                 target="_blank"
+                className="underline-animation"
                 rel="noopener noreferrer"
               >
                 @patel-himanshu
@@ -49,6 +56,7 @@ const SocialHandles = () => {
               <a
                 href="https://twitter.com/_Patel_Himanshu"
                 target="_blank"
+                className="underline-animation"
                 rel="noopener noreferrer"
               >
                 @_Patel_Himanshu

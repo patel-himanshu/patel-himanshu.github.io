@@ -14,7 +14,11 @@ const Blogs = () => {
           Return after a few days to see what's new.
           <br />
           <br />
-          Return to <Link to="/">Homepage</Link>.
+          Return to{" "}
+          <Link to="/" className="underline-animation">
+            Homepage
+          </Link>
+          .
         </div>
       </section>
     </article>

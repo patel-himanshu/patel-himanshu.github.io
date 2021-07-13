@@ -48,7 +48,33 @@ a {
 
 a:hover,
 a:focus {
-  text-decoration: underline;
+  text-decoration: none;
+  /* text-decoration: underline; */
+}
+
+a.underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0a66c2;
+}
+
+a.underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  bottom: -1px;
+  left: 0;
+  background-color: #0a66c2;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+}
+
+a.underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 code {
