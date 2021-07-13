@@ -15,8 +15,8 @@ export const internshipDetails = [
     role: "Software Developer Intern",
     details: [
       "Work from Home (August 2020 - October 2020)",
-      "Helped in the creation of multiple APIs using Django REST Framework",
-      "Helped in developing the front end of the website for the organization using Angular",
+      "Created multiple APIs using Django REST Framework, for an online MOOC platform",
+      "Worked on development of  the front end of the platform using Angular",
     ],
   },
 ];
