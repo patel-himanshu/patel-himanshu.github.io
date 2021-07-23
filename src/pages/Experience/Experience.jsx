@@ -91,17 +91,19 @@ const Experience = () => {
         <section>
           <h2 className="subsection-header">Positions of Responsibility</h2>
           <div className="underline" />
-          {positionsOfResponsibility.map((position) => {
-            return (
-              <Accordion key={position}>
-                <AccordionSummary>
-                  <Grid container>
-                    <Typography variant="subtitle2">{position}</Typography>
-                  </Grid>
-                </AccordionSummary>
-              </Accordion>
-            );
-          })}
+          <div className={classes.root}>
+            {positionsOfResponsibility.map((position) => {
+              return (
+                <Accordion key={position}>
+                  <AccordionSummary>
+                    <Grid container>
+                      <Typography variant="subtitle2">{position}</Typography>
+                    </Grid>
+                  </AccordionSummary>
+                </Accordion>
+              );
+            })}
+          </div>
         </section>
       </section>
     </article>
