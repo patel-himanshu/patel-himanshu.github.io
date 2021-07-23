@@ -7,7 +7,19 @@ import CustomButton from "../../components/CustomButton";
 const ContactForm = () => {
   return (
     <Grid item md={8} sm={12} xs={12}>
-      <form method="POST" action="https://formspree.io/f/mbjqyqlz">
+      {/* <form method="POST" action="https://formspree.io/f/mbjqyqlz"> */}
+      <form method="POST" action="https://api.web3forms.com/submit">
+        <input
+          type="hidden"
+          name="apikey"
+          value="ee61b2f7-78eb-45bb-93d1-8546333ed074"
+        />
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://web3forms.com/success"
+        />
+
         <fieldset>
           {/* <legend>
             <em>Contact Me</em>
