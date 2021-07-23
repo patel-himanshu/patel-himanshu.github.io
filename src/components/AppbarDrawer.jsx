@@ -67,6 +67,7 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
+    overflowX: "hidden",
   },
   drawerClose: {
     transition: theme.transitions.create("width", {
@@ -179,23 +180,29 @@ const AppbarDrawer = (props) => {
             </NavLink>
           ))}
         </List>
-        <Divider />
-        <List className={classes.socials}>
-          {props.socialMediaHandles.map(({ label, icon, path }) => (
-            <a
-              key={label}
-              href={path}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "black", textDecoration: "none" }}
-            >
-              <ListItem button>
-                <ListItemIcon style={{ minWidth: "3rem" }}>{icon}</ListItemIcon>
-                <ListItemText primary={label} />
-              </ListItem>
-            </a>
-          ))}
-        </List>
+        {props.socialMediaHandles && (
+          <>
+            <Divider />
+            <List className={classes.socials}>
+              {props.socialMediaHandles.map(({ label, icon, path }) => (
+                <a
+                  key={label}
+                  href={path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "black", textDecoration: "none" }}
+                >
+                  <ListItem button>
+                    <ListItemIcon style={{ minWidth: "3rem" }}>
+                      {icon}
+                    </ListItemIcon>
+                    <ListItemText primary={label} />
+                  </ListItem>
+                </a>
+              ))}
+            </List>
+          </>
+        )}
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
