@@ -37,7 +37,7 @@ const Home = () => {
                 <span className="flip">an open source enthusiast. ⭐</span>
                 <span className="flip">a lifelong learner. 📚</span>
                 {/* <span className="flip">a technical writer. ✍🏼</span> */}
-                <span className="flip">a Marvel fan. 🎬</span>
+                <span className="flip">a big MCU fan. 🎬</span>
               </span>
             </span>
           </p>

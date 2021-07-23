@@ -5,8 +5,9 @@ export const internshipDetails = [
     role: "Software Developer Intern",
     details: [
       "Work from Home (April 2021 - May 2021)",
-      "Worked on the front end of an Asset Performance Manager (APM) project, using React and Material-UI",
-      "Performed multiple API integrations on the front end, and used Redux for state management",
+      "Used React, Redux, HTML, CSS, Material-UI, Postman, Git, Figma",
+      "Worked on the front end of an Asset Performance Manager (APM) project",
+      "Performed multiple API integrations on the front end and used Redux for state management",
     ],
   },
   {
@@ -15,6 +16,7 @@ export const internshipDetails = [
     role: "Software Developer Intern",
     details: [
       "Work from Home (August 2020 - October 2020)",
+      "Used Angular, HTML, CSS, Bootstrap, Django, Postman, Git",
       "Created multiple APIs using Django REST Framework, for an online MOOC platform",
       "Worked on development of  the front end of the platform using Angular",
     ],
