@@ -1,3 +1,4 @@
+import React from "react";
 import Grid from "@material-ui/core/Grid";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -16,7 +17,7 @@ const Home = () => {
         container
         id="home-page"
         direction="row"
-        justify="center"
+        justifyContent="center"
         alignItems="center"
       >
         {/* <Grid item lg={6} md={4} sm={8} xs={9}>         */}
@@ -33,11 +34,31 @@ const Home = () => {
             <span className="main-container-flip">
               I am&nbsp;
               <span className="container-flip">
-                <span className="flip">a software developer. 💻</span>
-                <span className="flip">an open source enthusiast. ⭐</span>
-                <span className="flip">a lifelong learner. 📚</span>
-                {/* <span className="flip">a technical writer. ✍🏼</span> */}
-                <span className="flip">a big MCU fan. 🎬</span>
+                <span className="flip">
+                  a software developer.{" "}
+                  <span role="img" aria-label="laptop">
+                    💻
+                  </span>
+                </span>
+                <span className="flip">
+                  an open source enthusiast.{" "}
+                  <span role="img" aria-label="star">
+                    ⭐
+                  </span>
+                </span>
+                <span className="flip">
+                  a lifelong learner.{" "}
+                  <span role="img" aria-label="books">
+                    📚
+                  </span>
+                </span>
+                {/* <span className="flip">a technical writer. <span role="img" aria-label="writing">✍🏼</span></span> */}
+                <span className="flip">
+                  a big MCU fan.{" "}
+                  <span role="img" aria-label="movie clapper">
+                    🎬
+                  </span>
+                </span>
               </span>
             </span>
           </p>
@@ -45,19 +66,20 @@ const Home = () => {
       </Grid>
 
       <div className="links">
-        <Grid container justify="center">
+        <Grid container justifyContent="center">
           <a href={resume} target="_blank" rel="noopener noreferrer">
             <CustomButton>View My Resume</CustomButton>
           </a>
         </Grid>
-        <Grid container justify="center" className="logos">
-          <a href="mailto:hpatel27299@gmail.com">
+        <Grid container justifyContent="center" className="logos">
+          <a href="mailto:hpatel27299@gmail.com" title="email">
             <MailOutlineSharpIcon fontSize="large" id="mail-logo" />
           </a>
           <a
             href="https://github.com/patel-himanshu"
             target="_blank"
             rel="noopener noreferrer"
+            title="github"
           >
             <GitHubIcon fontSize="large" id="github-logo" />
           </a>
@@ -65,6 +87,7 @@ const Home = () => {
             href="https://linkedin.com/in/patel-himanshu"
             target="_blank"
             rel="noopener noreferrer"
+            title="linkedin"
           >
             <LinkedInIcon fontSize="large" id="linkedin-logo" />
           </a>
@@ -72,6 +95,7 @@ const Home = () => {
             href="https://twitter.com/_Patel_Himanshu"
             target="_blank"
             rel="noopener noreferrer"
+            title="twitter"
           >
             <TwitterIcon fontSize="large" id="twitter-logo" />
           </a>

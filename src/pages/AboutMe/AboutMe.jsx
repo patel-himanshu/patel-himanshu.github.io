@@ -1,3 +1,4 @@
+import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -22,12 +23,35 @@ const AboutMe = () => {
               My name is Himanshu Patel. Currently, I am
               <ul>
                 <li>
-                  👨🏼‍🎓 a final-year CSE undergrad at IIIT Naya Raipur (India)
+                  <span role="img" aria-label="student">
+                    👨🏼‍🎓
+                  </span>{" "}
+                  a final-year CSE undergrad at IIIT Naya Raipur (India)
                 </li>
-                <li>💼 working on getting a job/internship</li>
-                <li>💻 interested in full-stack development</li>
-                <li>🧰 learning React and Django</li>
-                <li>👩‍💻 trying to become more involved in open source</li>
+                <li>
+                  <span role="img" aria-label="briefcase">
+                    💼
+                  </span>{" "}
+                  working on getting a job/internship
+                </li>
+                <li>
+                  <span role="img" aria-label="laptop">
+                    💻
+                  </span>{" "}
+                  interested in full-stack development
+                </li>
+                <li>
+                  <span role="img" aria-label="toolbox">
+                    🧰
+                  </span>{" "}
+                  learning React and Django
+                </li>
+                <li>
+                  <span role="img" aria-label="student with laptop">
+                    👩‍💻
+                  </span>{" "}
+                  trying to become more involved in open source
+                </li>
               </ul>
               I enjoy writing code, especially in Python and JavaScript.
               <br />I am always eager to learn and explore new things.
@@ -68,7 +92,7 @@ const AboutMe = () => {
           container
           spacing={3}
           direction="row"
-          justify="center"
+          justifyContent="center"
           alignItems="stretch"
         >
           {education.map((entry) => {

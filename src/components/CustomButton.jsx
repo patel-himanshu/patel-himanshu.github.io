@@ -1,3 +1,4 @@
+import React from "react";
 import { Button, withStyles } from "@material-ui/core";
 import { fontSizes, fontWeights } from "../styling/typography";
 import palette from "../styling/palette";

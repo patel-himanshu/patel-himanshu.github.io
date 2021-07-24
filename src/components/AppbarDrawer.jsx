@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Link, NavLink } from "react-router-dom";
 import clsx from "clsx";
@@ -181,7 +181,7 @@ const AppbarDrawer = (props) => {
           ))}
         </List>
         {props.socialMediaHandles && (
-          <>
+          <React.Fragment>
             <Divider />
             <List className={classes.socials}>
               {props.socialMediaHandles.map(({ label, icon, path }) => (
@@ -201,7 +201,7 @@ const AppbarDrawer = (props) => {
                 </a>
               ))}
             </List>
-          </>
+          </React.Fragment>
         )}
       </Drawer>
       <main className={classes.content}>

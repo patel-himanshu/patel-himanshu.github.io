@@ -1,5 +1,6 @@
+import React from "react";
 import { ThemeProvider } from "@material-ui/styles";
-import { createMuiTheme } from "@material-ui/core";
+import { createTheme } from "@material-ui/core";
 import { Redirect, Route, Switch } from "react-router-dom";
 
 import EmailIcon from "@material-ui/icons/Email";
@@ -74,7 +75,7 @@ const socialMediaHandles = [
 ];
 
 function App() {
-  const customTheme = createMuiTheme(theme);
+  const customTheme = createTheme(theme);
 
   return (
     <ThemeProvider theme={customTheme}>
