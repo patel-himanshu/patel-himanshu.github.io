@@ -16,14 +16,31 @@ import "./Experience.css";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
-    padding: "0 1rem",
+    // padding: "0 0.25rem",
   },
   heading: {
     flexBasis: "33.33%",
     flexShrink: 0,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1rem",
+    },
   },
   secondaryHeading: {
     color: theme.palette.text.secondary,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "0.9rem",
+    },
+  },
+  details: {
+    marginTop: "0.5rem",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "0.9rem",
+    },
+  },
+  positions: {
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "0.9rem",
+    },
   },
 }));
 
@@ -56,7 +73,7 @@ const Experience = () => {
                 >
                   <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                     <Grid container>
-                      <Grid item lg={2} md={3} xs={4}>
+                      <Grid item lg={2} md={3} xs={12}>
                         <Typography
                           className={classes.heading}
                           style={{ margin: "auto" }}
@@ -64,12 +81,20 @@ const Experience = () => {
                           <strong>{internship.company}</strong>
                         </Typography>
                       </Grid>
+                      <Grid item md={4} xs={12}>
+                        <Typography
+                          className={classes.heading}
+                          style={{ margin: "auto" }}
+                        >
+                          {internship.role}
+                        </Typography>
+                      </Grid>
                       <Grid item>
                         <Typography
                           className={classes.secondaryHeading}
                           style={{ margin: "auto" }}
                         >
-                          {internship.role}
+                          ({internship.duration})
                         </Typography>
                       </Grid>
                     </Grid>
@@ -77,7 +102,11 @@ const Experience = () => {
                   <AccordionDetails>
                     <ul className="accordian-details">
                       {internship.details.map((detail) => {
-                        return <li key={detail}>{detail}</li>;
+                        return (
+                          <li key={detail} className={classes.details}>
+                            {detail}
+                          </li>
+                        );
                       })}
                     </ul>
                   </AccordionDetails>
@@ -97,7 +126,12 @@ const Experience = () => {
                 <Accordion key={position}>
                   <AccordionSummary>
                     <Grid container>
-                      <Typography variant="subtitle2">{position}</Typography>
+                      <Typography
+                        variant="subtitle2"
+                        className={classes.positions}
+                      >
+                        {position}
+                      </Typography>
                     </Grid>
                   </AccordionSummary>
                 </Accordion>
