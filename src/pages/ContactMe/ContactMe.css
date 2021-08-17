@@ -1,4 +1,5 @@
 .contact-table {
+  font-size: 1rem;
   margin: 1rem auto;
   /* background-color: #e2e2e2; */
 }
@@ -11,6 +12,10 @@ form {
 @media only screen and (min-width: 800px) {
   form {
     width: 80%;
+  }
+
+  .contact-table {
+    font-size: 1.25rem;
   }
 }
 

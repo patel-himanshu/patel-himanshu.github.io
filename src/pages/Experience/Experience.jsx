@@ -124,16 +124,14 @@ const Experience = () => {
             {positionsOfResponsibility.map((position) => {
               return (
                 <Accordion key={position}>
-                  <AccordionSummary>
-                    <Grid container>
-                      <Typography
-                        variant="subtitle2"
-                        className={classes.positions}
-                      >
-                        {position}
-                      </Typography>
-                    </Grid>
-                  </AccordionSummary>
+                  <Grid container style={{ padding: "1rem" }}>
+                    <Typography
+                      variant="subtitle2"
+                      className={classes.positions}
+                    >
+                      {position}
+                    </Typography>
+                  </Grid>
                 </Accordion>
               );
             })}

@@ -19,14 +19,18 @@ import "./Projects.css";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    minWidth: 350,
-    margin: "0.5rem",
+    // minWidth: 350,
+    margin: "0.5rem 0.25rem",
     boxShadow: "0 0 7px purple",
     backgroundColor: "#e0cae2",
   },
   media: {
     height: 0,
     paddingTop: "56.25%", // 16:9
+  },
+  cardActions: {
+    padding: "0",
+    justifyContent: "center",
   },
   modal: {
     display: "flex",
@@ -74,7 +78,7 @@ const ProjectCard = ({ project }) => {
         title={project.name}
       />
 
-      <CardActions style={{ padding: 0, paddingLeft: "1rem" }}>
+      <CardActions className={classes.cardActions}>
         {project.details && (
           <>
             <IconButton

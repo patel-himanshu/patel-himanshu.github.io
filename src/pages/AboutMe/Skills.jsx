@@ -88,10 +88,10 @@ const data = [
 
 const Skills = () => {
   return (
-    <Grid container>
+    <Grid container direction="row" justifyContent="center">
       {data.map((elem) => {
         return (
-          <Grid item md={3} sm={6} xs={12} key={elem.category}>
+          <Grid item lg={3} md={4} sm={6} xs={12} key={elem.category}>
             <Card
               variant="outlined"
               style={{
@@ -132,10 +132,7 @@ const Skills = () => {
                               }}
                             />
                           </ListItemIcon>
-                          <ListItemText
-                            primary={skill.name}
-                            // secondary={secondary ? 'Secondary text' : null}
-                          />
+                          <ListItemText primary={skill.name} />
                         </ListItem>
                       );
                     })}
