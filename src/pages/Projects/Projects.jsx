@@ -14,7 +14,7 @@ const Projects = () => {
           <span className="section-header">Projects</span>
         </header>
 
-        <Grid container>
+        <Grid container spacing={1}>
           {projects.map((project, idx) => (
             <Grid container item xs={12} md={6} lg={4}>
               <ProjectCard key={idx} project={project} />

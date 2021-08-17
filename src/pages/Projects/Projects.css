@@ -13,7 +13,13 @@
   border-bottom: 1px solid gray;
 }
 
+.MuiCardHeader-root {
+  background-color: #f8c6ff;
+  background-color: #efc5ff;
+}
+
 span.MuiCardHeader-title {
+  font-size: 1.35rem;
   font-weight: 600;
 }
 
@@ -22,6 +28,5 @@ span.MuiCardHeader-subheader {
 }
 
 .MuiCardActions-root {
-  background-color: #eac5ee;
   background-color: #cfa3d4;
 }

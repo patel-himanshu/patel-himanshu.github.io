@@ -44,11 +44,11 @@ const drawerOptions = [
     icon: <ViewCompactIcon style={{ color: "#8f5693" }} />,
     path: "/projects",
   },
-  {
-    label: "Blogs",
-    icon: <CreateIcon style={{ color: "#ec4134" }} />,
-    path: "/blogs",
-  },
+  // {
+  //   label: "Blogs",
+  //   icon: <CreateIcon style={{ color: "#ec4134" }} />,
+  //   path: "/blogs",
+  // },
   {
     label: "Contact Me",
     icon: <EmailIcon style={{ color: "#7c7c7c" }} />,

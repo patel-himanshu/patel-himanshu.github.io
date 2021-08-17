@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     minWidth: 350,
     margin: "0.5rem",
-    boxShadow: "0 0 5px purple",
+    boxShadow: "0 0 7px purple",
     backgroundColor: "#e0cae2",
   },
   media: {
@@ -59,7 +59,7 @@ const ProjectCard = ({ project }) => {
         title={project.name}
       />
 
-      <CardActions style={{ padding: 0 }}>
+      <CardActions style={{ padding: 0, paddingLeft: "1rem" }}>
         {/* {project.details && (
           <a
             href={project.details}
@@ -67,7 +67,7 @@ const ProjectCard = ({ project }) => {
             rel="noopener noreferrer"
             title="More Info"
           >
-            <IconButton aria-label="More Info">
+            <IconButton aria-label="More Info" style={{color: "#1751c7"}}>
               <InfoIcon />
             </IconButton>
           </a>
@@ -79,7 +79,10 @@ const ProjectCard = ({ project }) => {
             rel="noopener noreferrer"
             title="Source Code (GitHub)"
           >
-            <IconButton aria-label="Source Code (GitHub)">
+            <IconButton
+              aria-label="Source Code (GitHub)"
+              style={{ color: "black" }}
+            >
               <GitHubIcon />
             </IconButton>
           </a>
@@ -91,7 +94,7 @@ const ProjectCard = ({ project }) => {
             rel="noopener noreferrer"
             title="Launch Demo"
           >
-            <IconButton aria-label="Launch Demo">
+            <IconButton aria-label="Launch Demo" style={{ color: "#1751c7" }}>
               <LaunchIcon />
             </IconButton>
           </a>
