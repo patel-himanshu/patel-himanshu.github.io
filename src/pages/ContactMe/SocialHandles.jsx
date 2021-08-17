@@ -64,6 +64,20 @@ const SocialHandles = () => {
               </a>
             </td>
           </tr>
+          <tr>
+            <td>Bio Link</td>
+            <td>:</td>
+            <td>
+              <a
+                href="https://bio.link/patel_himanshu"
+                target="_blank"
+                className="underline-animation"
+                rel="noopener noreferrer"
+              >
+                @patel_himanshu
+              </a>
+            </td>
+          </tr>
         </tbody>
       </table>
     </Grid>

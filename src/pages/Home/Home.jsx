@@ -36,23 +36,23 @@ const Home = () => {
               <span className="container-flip">
                 <span className="flip">
                   a software developer. 💻
-                  {/* <span role="img" aria-label="laptop">
+                  {/* <span role="img" aria-label="Laptop">
                   </span> */}
                 </span>
                 <span className="flip">
                   an open source enthusiast. ⭐
-                  {/* <span role="img" aria-label="star">
+                  {/* <span role="img" aria-label="Star">
                   </span> */}
                 </span>
                 <span className="flip">
                   a lifelong learner. 📚
-                  {/* <span role="img" aria-label="books">
+                  {/* <span role="img" aria-label="Books">
                   </span> */}
                 </span>
-                {/* <span className="flip">a technical writer. <span role="img" aria-label="writing">✍🏼</span></span> */}
+                {/* <span className="flip">a technical writer. <span role="img" aria-label="Writing">✍🏼</span></span> */}
                 <span className="flip">
                   a big MCU fan. 🎬
-                  {/* <span role="img" aria-label="movie clapper">
+                  {/* <span role="img" aria-label="Movie Clapper">
                   </span> */}
                 </span>
               </span>

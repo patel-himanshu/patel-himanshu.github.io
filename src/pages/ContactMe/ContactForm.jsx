@@ -46,7 +46,7 @@ const ContactForm = () => {
             type="text"
             id="message"
             name="message"
-            rowsMin="5"
+            minRows="5"
             required
           />
           <div align="center">

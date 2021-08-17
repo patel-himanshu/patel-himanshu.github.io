@@ -121,7 +121,7 @@ const AppbarDrawer = (props) => {
         <Toolbar style={{ padding: "0 1rem" }}>
           <IconButton
             color="inherit"
-            aria-label="open drawer"
+            aria-label="Open Menu Drawer"
             onClick={handleDrawerOpen}
             edge="start"
             className={clsx(classes.menuButton, {

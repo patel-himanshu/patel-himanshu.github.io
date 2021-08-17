@@ -25,31 +25,31 @@ const AboutMe = () => {
               My name is Himanshu Patel. Currently, I am
               <ul>
                 <li>
-                  <span role="img" aria-label="student">
+                  <span role="img" aria-label="Student">
                     👨🏼‍🎓
                   </span>{" "}
                   a final-year CSE undergrad at IIIT Naya Raipur (India)
                 </li>
                 <li>
-                  <span role="img" aria-label="briefcase">
+                  <span role="img" aria-label="Briefcase">
                     💼
                   </span>{" "}
                   working on getting a job/internship
                 </li>
                 <li>
-                  <span role="img" aria-label="laptop">
+                  <span role="img" aria-label="Laptop">
                     💻
                   </span>{" "}
                   interested in full-stack development
                 </li>
                 <li>
-                  <span role="img" aria-label="toolbox">
+                  <span role="img" aria-label="Toolbox">
                     🧰
                   </span>{" "}
                   learning React and Django
                 </li>
                 <li>
-                  <span role="img" aria-label="student with laptop">
+                  <span role="img" aria-label="Student with laptop">
                     👩‍💻
                   </span>{" "}
                   trying to become more involved in open source
@@ -77,7 +77,7 @@ const AboutMe = () => {
           {/* <h2 className="subsection-header">My Skills</h2>
           <div className="underline" /> */}
         </header>
-        <div>
+        <div className="skills-section">
           <MemoedSkills />
         </div>
       </section>
