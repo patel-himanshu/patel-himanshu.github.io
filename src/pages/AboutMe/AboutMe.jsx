@@ -9,6 +9,8 @@ import { education } from "./education";
 import Skills from "./Skills";
 import "./AboutMe.css";
 
+const MemoedSkills = React.memo(Skills);
+
 const AboutMe = () => {
   return (
     <article className="page-content">
@@ -76,7 +78,7 @@ const AboutMe = () => {
           <div className="underline" /> */}
         </header>
         <div>
-          <Skills />
+          <MemoedSkills />
         </div>
       </section>
 
@@ -122,4 +124,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default React.memo(AboutMe);

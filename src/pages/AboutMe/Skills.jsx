@@ -25,6 +25,7 @@ import materialui from "../../assets/logos/material-ui.png";
 import mongodb from "../../assets/logos/mongodb.png";
 import mysql from "../../assets/logos/mysql.png";
 // import netcore from "../../assets/logos/net-core.png";
+import nextjs from "../../assets/logos/nextjs.png";
 // import nodejs from "../../assets/logos/nodejs.png";
 // import postgresql from "../../assets/logos/postgresql.png";
 import postman from "../../assets/logos/postman.png";
@@ -32,6 +33,7 @@ import python from "../../assets/logos/python.png";
 import react from "../../assets/logos/react.png";
 import redux from "../../assets/logos/redux.png";
 import sqlite from "../../assets/logos/sqlite.png";
+import tailwind from "../../assets/logos/tailwind.png";
 // import tensorflow from "../../assets/logos/tensorflow.png";
 import typescript from "../../assets/logos/typescript.png";
 import windows from "../../assets/logos/windows.png";
@@ -52,6 +54,8 @@ const data = [
     skills: [
       { name: "React", icon: react },
       { name: "Django", icon: django },
+      { name: "Next.js", icon: nextjs },
+      { name: "Tailwind CSS", icon: tailwind },
       { name: "Bootstrap", icon: bootstrap },
       { name: "Material-UI", icon: materialui },
       { name: "Angular", icon: angular },
