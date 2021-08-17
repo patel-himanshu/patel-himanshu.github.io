@@ -3,7 +3,7 @@ export const projects = [
     name: "Comic Book Store",
     subclasses: "Web App (Full Stack)",
     technologiesUsed: ["React", "Redux", "Django", "Bootstrap"],
-    image: "comic-book-store.png",
+    image: "comic-book-store.jpg",
     description: "An e-commerce store for buying comic books.",
     details: [
       "Used React with functional components and Hooks, and Redux for managing global state",
@@ -17,7 +17,7 @@ export const projects = [
     name: "Algorithm Visualizer",
     subclasses: "Web App (Front End)",
     technologiesUsed: ["React", "HTML", "CSS", "Bootstrap"],
-    image: "algorithm-visualizer.png",
+    image: "algorithm-visualizer.jpg",
     description: "An interactive web app to visualize pathfinding algorithms.",
     details: [
       "Implemented an interactive interface to visualize Dijkstra’s algorithm using React",
@@ -30,7 +30,7 @@ export const projects = [
     name: "Soybean Crop Insect Classifier",
     subclasses: "Web App, Deep Learning",
     technologiesUsed: ["Django", "TensorFlow Lite"],
-    image: "crop-insect-classifier.png",
+    image: "crop-insect-classifier.jpg",
     description:
       "A Django-based web app to classify the type of soybean crop insects in real-time.",
     details: [
@@ -44,7 +44,7 @@ export const projects = [
     name: "React Mini Projects",
     subclasses: "Web App (Front End)",
     technologiesUsed: ["React", "Bootstrap", "HTML", "CSS"],
-    image: "react-mini-projects.png",
+    image: "react-mini-projects.jpg",
     description: "A collection of small projects built using React.",
     details: [
       "Contact Book Manager (A CRUD application that fetches mock data from JSON Placeholder)",
