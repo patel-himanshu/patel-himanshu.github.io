@@ -1,0 +1,27 @@
+/* .MuiCardHeader-root,
+.MuiPaper-root,
+.MuiCardActions-root,
+.MuiCardContent-root {
+  background-color: #9b6a9e;
+  color: white;
+} */
+
+.MuiCardMedia-root {
+  /* background-color: #575757; */
+  /* background-color: #e0cae2; */
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+span.MuiCardHeader-title {
+  font-weight: 600;
+}
+
+span.MuiCardHeader-subheader {
+  color: #333;
+}
+
+.MuiCardActions-root {
+  background-color: #eac5ee;
+  background-color: #cfa3d4;
+}
