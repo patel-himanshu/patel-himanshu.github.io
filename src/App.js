@@ -26,7 +26,7 @@ const drawerOptions = [
   {
     label: "Home",
     icon: <HomeIcon style={{ color: "#3F51B5" }} />,
-    path: "/home",
+    path: "/",
   },
   {
     label: "About Me",

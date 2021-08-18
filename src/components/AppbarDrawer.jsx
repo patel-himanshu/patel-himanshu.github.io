@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import clsx from "clsx";
 
 import Drawer from "@material-ui/core/Drawer";
@@ -97,6 +97,7 @@ const useStyles = makeStyles((theme) => ({
 const AppbarDrawer = (props) => {
   const classes = useStyles();
   const theme = useTheme();
+  const location = useLocation();
 
   const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -180,8 +181,8 @@ const AppbarDrawer = (props) => {
             </NavLink>
           ))}
         </List>
-        {props.socialMediaHandles && (
-          <React.Fragment>
+        {location.pathname !== "/" && props.socialMediaHandles && (
+          <>
             <Divider />
             <List className={classes.socials}>
               {props.socialMediaHandles.map(({ label, icon, path }) => (
@@ -201,7 +202,7 @@ const AppbarDrawer = (props) => {
                 </a>
               ))}
             </List>
-          </React.Fragment>
+          </>
         )}
       </Drawer>
       <main className={classes.content}>
