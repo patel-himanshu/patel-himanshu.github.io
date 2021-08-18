@@ -1,4 +1,4 @@
-import React from "react";
+import { memo, useEffect } from "react";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -9,9 +9,13 @@ import { education } from "./education";
 import Skills from "./Skills";
 import "./AboutMe.css";
 
-const MemoedSkills = React.memo(Skills);
+const MemoedSkills = memo(Skills);
 
 const AboutMe = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <article className="page-content">
       {/* "About Me" section */}
@@ -124,4 +128,4 @@ const AboutMe = () => {
   );
 };
 
-export default React.memo(AboutMe);
+export default memo(AboutMe);

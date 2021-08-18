@@ -1,4 +1,4 @@
-import React from "react";
+import { memo, useEffect } from "react";
 import Grid from "@material-ui/core/Grid";
 
 import CustomButton from "../../components/CustomButton";
@@ -7,6 +7,10 @@ import { projects } from "./projectInfo";
 import "./Projects.css";
 
 const Projects = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <article className="page-content">
       <section className="page-section">
@@ -43,4 +47,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default memo(Projects);

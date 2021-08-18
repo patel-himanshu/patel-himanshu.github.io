@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import Grid from "@material-ui/core/Grid";
 
 import ContactForm from "./ContactForm";
@@ -6,6 +6,10 @@ import SocialHandles from "./SocialHandles";
 import "./ContactMe.css";
 
 const ContactMe = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <article className="page-content">
       <section className="page-section">

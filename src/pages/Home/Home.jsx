@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import Grid from "@material-ui/core/Grid";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -11,6 +11,10 @@ import resume from "../../assets/Himanshu Patel.pdf";
 import "./Home.css";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <article className="page-section">
       <Grid

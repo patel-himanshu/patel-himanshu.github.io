@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Accordion from "@material-ui/core/Accordion";
@@ -51,6 +51,10 @@ const Experience = () => {
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <article className="page-content">
@@ -142,4 +146,4 @@ const Experience = () => {
   );
 };
 
-export default React.memo(Experience);
+export default memo(Experience);
