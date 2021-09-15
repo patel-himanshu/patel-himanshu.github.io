@@ -181,9 +181,9 @@ const AppbarDrawer = (props) => {
             </NavLink>
           ))}
         </List>
+        <Divider />
         {location.pathname !== "/" && props.socialMediaHandles && (
           <>
-            <Divider />
             <List className={classes.socials}>
               {props.socialMediaHandles.map(({ label, icon, path }) => (
                 <a

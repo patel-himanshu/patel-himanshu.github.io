@@ -34,12 +34,12 @@ const AboutMe = () => {
                   </span>{" "}
                   a final-year CSE undergrad at IIIT Naya Raipur (India)
                 </li>
-                <li>
+                {/* <li>
                   <span role="img" aria-label="Briefcase">
                     💼
                   </span>{" "}
                   working on getting a job/internship
-                </li>
+                </li> */}
                 <li>
                   <span role="img" aria-label="Laptop">
                     💻
