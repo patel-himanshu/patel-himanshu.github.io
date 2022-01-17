@@ -7,7 +7,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 
-import angular from "../../assets/logos/angular.png";
+// import angular from "../../assets/logos/angular.png";
 // import aspnet from "../../assets/logos/asp-net.png";
 import bootstrap from "../../assets/logos/bootstrap.png";
 // import csharp from "../../assets/logos/c-sharp.png";
@@ -25,7 +25,7 @@ import materialui from "../../assets/logos/material-ui.png";
 import mongodb from "../../assets/logos/mongodb.png";
 import mysql from "../../assets/logos/mysql.png";
 // import netcore from "../../assets/logos/net-core.png";
-import nextjs from "../../assets/logos/nextjs.png";
+// import nextjs from "../../assets/logos/nextjs.png";
 // import nodejs from "../../assets/logos/nodejs.png";
 // import postgresql from "../../assets/logos/postgresql.png";
 import postman from "../../assets/logos/postman.png";
@@ -54,11 +54,11 @@ const data = [
     skills: [
       { name: "React", icon: react },
       { name: "Django", icon: django },
-      { name: "Next.js", icon: nextjs },
+      // { name: "Next.js", icon: nextjs },
       { name: "Tailwind CSS", icon: tailwind },
       { name: "Bootstrap", icon: bootstrap },
       { name: "Material-UI", icon: materialui },
-      { name: "Angular", icon: angular },
+      // { name: "Angular", icon: angular },
       //   { name: "Express", icon: express },
       //   { name: "TensorFlow", icon: tensorflow },
     ],

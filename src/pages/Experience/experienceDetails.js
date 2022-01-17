@@ -1,6 +1,13 @@
 export const internshipDetails = [
   {
-    label: "label1",
+    label: "label3",
+    company: "Carl Zeiss India (Bangalore)",
+    role: "Full-Stack Developer Intern",
+    duration: "January 2022 - Present",
+    details: [],
+  },
+  {
+    label: "label2",
     company: "Cartel101",
     role: "Software Developer Intern",
     duration: "April 2021 - May 2021",
@@ -11,7 +18,7 @@ export const internshipDetails = [
     ],
   },
   {
-    label: "label2",
+    label: "label1",
     company: "ChaloPadhe",
     role: "Software Developer Intern",
     duration: "August 2020 - October 2020",
