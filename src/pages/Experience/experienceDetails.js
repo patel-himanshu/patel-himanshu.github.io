@@ -4,7 +4,9 @@ export const internshipDetails = [
 		company: "Carl Zeiss India (Bangalore)",
 		role: "Full-Stack Developer Intern",
 		duration: "January 2022 - Present",
-		details: [],
+		details: [
+			"Working on the front-end of an internal Frame Digitization Platform, using React, TypeScript and Material-UI",
+		],
 	},
 	{
 		label: "label2",
