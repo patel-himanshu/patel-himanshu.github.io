@@ -163,6 +163,9 @@ span.main-container-flip {
 
 .logos {
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logos > a {

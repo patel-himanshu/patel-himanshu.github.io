@@ -67,9 +67,9 @@ const Home = () => {
 						<CustomButton>View My Resume</CustomButton>
 					</a>
 				</Grid>
-				<Grid container justifyContent="center" className="logos">
+				<Grid container className="logos">
 					<a href="mailto:hpatel27299@gmail.com" title="E-Mail">
-						<MailOutlineSharpIcon fontSize="large" id="mail-logo" />
+						<MailOutlineSharpIcon style={{ fontSize: "3rem" }} id="mail-logo" />
 					</a>
 					<a
 						href="https://github.com/patel-himanshu"
@@ -77,7 +77,7 @@ const Home = () => {
 						rel="noopener noreferrer"
 						title="GitHub"
 					>
-						<GitHubIcon fontSize="large" id="github-logo" />
+						<GitHubIcon style={{ fontSize: "2.5rem" }} id="github-logo" />
 					</a>
 					<a
 						href="https://linkedin.com/in/patel-himanshu"
@@ -85,7 +85,7 @@ const Home = () => {
 						rel="noopener noreferrer"
 						title="LinkedIn"
 					>
-						<LinkedInIcon fontSize="large" id="linkedin-logo" />
+						<LinkedInIcon style={{ fontSize: "3rem" }} id="linkedin-logo" />
 					</a>
 					<a
 						href="https://twitter.com/_Patel_Himanshu"
@@ -93,7 +93,7 @@ const Home = () => {
 						rel="noopener noreferrer"
 						title="Twitter"
 					>
-						<TwitterIcon fontSize="large" id="twitter-logo" />
+						<TwitterIcon style={{ fontSize: "3rem" }} id="twitter-logo" />
 					</a>
 				</Grid>
 			</div>

@@ -20,7 +20,7 @@ ul.accordian-details {
   font-size: 1.1rem;
   padding: 0.5rem;
   padding-left: 1rem;
-  border-top: 2px solid #999;
+  /* border-top: 2px solid #999; */
 }
 
 ul.positions-responsibility {
