@@ -1,4 +1,5 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -39,112 +40,116 @@ import typescript from "../../assets/logos/typescript.png";
 import windows from "../../assets/logos/windows.png";
 
 const data = [
-  {
-    category: "Languages",
-    skills: [
-      { name: "Python", icon: python },
-      { name: "JavaScript", icon: javascript },
-      { name: "TypeScript", icon: typescript },
-      { name: "HTML", icon: html },
-      { name: "CSS", icon: css },
-    ],
-  },
-  {
-    category: "Frameworks & Libraries",
-    skills: [
-      { name: "React", icon: react },
-      { name: "Django", icon: django },
-      // { name: "Next.js", icon: nextjs },
-      { name: "Tailwind CSS", icon: tailwind },
-      { name: "Bootstrap", icon: bootstrap },
-      { name: "Material-UI", icon: materialui },
-      // { name: "Angular", icon: angular },
-      //   { name: "Express", icon: express },
-      //   { name: "TensorFlow", icon: tensorflow },
-    ],
-  },
-  {
-    category: "Databases",
-    skills: [
-      { name: "MySQL", icon: mysql },
-      { name: "SQLite", icon: sqlite },
-      { name: "MongoDB", icon: mongodb },
-      //   { name: "PostgreSQL", icon: postgresql },
-    ],
-  },
-  {
-    category: "Tools & Platforms",
-    skills: [
-      { name: "Git", icon: git },
-      { name: "Redux", icon: redux },
-      //   { name: "Node.js", icon: nodejs },
-      { name: "Postman", icon: postman },
-      //   { name: "LATEX", icon: latex },
-      { name: "Windows", icon: windows },
-      { name: "Linux", icon: linux },
-    ],
-  },
+	{
+		category: "Languages",
+		skills: [
+			{ name: "Python", icon: python },
+			{ name: "TypeScript", icon: typescript },
+			{ name: "JavaScript", icon: javascript },
+			{ name: "HTML", icon: html },
+			{ name: "CSS", icon: css },
+		],
+	},
+	{
+		category: "Frameworks & Libraries",
+		skills: [
+			{ name: "React", icon: react },
+			{ name: "Django", icon: django },
+			// { name: "Next.js", icon: nextjs },
+			{ name: "Material-UI", icon: materialui },
+			{ name: "Bootstrap", icon: bootstrap },
+			{ name: "Tailwind CSS", icon: tailwind },
+			// { name: "Angular", icon: angular },
+			//   { name: "Express", icon: express },
+		],
+	},
+	{
+		category: "Databases",
+		skills: [
+			{ name: "MongoDB", icon: mongodb },
+			{ name: "MySQL", icon: mysql },
+			{ name: "SQLite", icon: sqlite },
+			//   { name: "PostgreSQL", icon: postgresql },
+		],
+	},
+	{
+		category: "Tools & Platforms",
+		skills: [
+			{ name: "Git", icon: git },
+			{ name: "Redux", icon: redux },
+			//   { name: "Node.js", icon: nodejs },
+			{ name: "Postman", icon: postman },
+			//   { name: "LATEX", icon: latex },
+			{ name: "Windows", icon: windows },
+			{ name: "Linux", icon: linux },
+		],
+	},
 ];
 
+const useStyles = makeStyles({
+	card: {
+		backgroundColor: "#e7fcd2",
+		boxShadow: "0 0 10px grey",
+		border: "1px solid green",
+		margin: "0.5rem",
+	},
+	cardContent: {
+		width: "100%",
+		height: "1.5px",
+		background: "#808080",
+		overflow: "hidden",
+	},
+	listItemIcon: {
+		width: "100px",
+		marginRight: "0.5rem",
+	},
+	logoIcons: {
+		filter: "drop-shadow(0 0 0.5px #AAA)",
+		display: "block",
+		margin: "auto",
+		height: "40px",
+	},
+});
+
 const Skills = () => {
-  return (
-    <Grid container direction="row" justifyContent="center">
-      {data.map((elem) => {
-        return (
-          <Grid item lg={3} md={4} sm={6} xs={12} key={elem.category}>
-            <Card
-              variant="outlined"
-              style={{
-                backgroundColor: "#e7fcd2",
-                boxShadow: "0 0 10px grey",
-                border: "1px solid green",
-                margin: "0.5rem",
-              }}
-            >
-              <CardContent>
-                <strong>
-                  <em>{elem.category}</em>
-                </strong>
-                <div
-                  style={{
-                    width: "100%",
-                    height: "1.5px",
-                    background: "#808080",
-                    overflow: "hidden",
-                  }}
-                />
-                <div>
-                  <List style={{ padding: "0" }}>
-                    {elem.skills.map((skill) => {
-                      return (
-                        <ListItem disableGutters key={skill.name}>
-                          <ListItemIcon
-                            style={{ width: "100px", marginRight: "0.5rem" }}
-                          >
-                            <img
-                              src={skill.icon}
-                              alt={skill.name}
-                              style={{
-                                filter: "drop-shadow(0 0 0.5px #59170D)",
-                                display: "block",
-                                margin: "auto",
-                                height: "40px",
-                              }}
-                            />
-                          </ListItemIcon>
-                          <ListItemText primary={skill.name} />
-                        </ListItem>
-                      );
-                    })}
-                  </List>
-                </div>
-              </CardContent>
-            </Card>
-          </Grid>
-        );
-      })}
-    </Grid>
-  );
+	const classes = useStyles();
+
+	return (
+		<Grid container direction="row" justifyContent="center">
+			{data.map((elem) => {
+				return (
+					<Grid item lg={3} md={4} sm={6} xs={12} key={elem.category}>
+						<Card variant="outlined" className={classes.card}>
+							<CardContent>
+								<strong>
+									<em>{elem.category}</em>
+								</strong>
+								<div className={classes.cardContent} />
+								<div>
+									<List style={{ padding: "0" }}>
+										{elem.skills.map((skill) => {
+											return (
+												<ListItem disableGutters key={skill.name}>
+													<ListItemIcon className={classes.listItemIcon}>
+														<img
+															src={skill.icon}
+															alt={skill.name}
+															className={classes.logoIcons}
+														/>
+													</ListItemIcon>
+													<ListItemText primary={skill.name} />
+												</ListItem>
+											);
+										})}
+									</List>
+								</div>
+							</CardContent>
+						</Card>
+					</Grid>
+				);
+			})}
+		</Grid>
+	);
 };
 
 export default Skills;
