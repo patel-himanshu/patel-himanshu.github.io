@@ -23,80 +23,80 @@ import Projects from "./pages/Projects/Projects";
 import theme from "./styling/theme";
 
 const drawerOptions = [
-  {
-    label: "Home",
-    icon: <HomeIcon style={{ color: "#3F51B5" }} />,
-    path: "/",
-  },
-  {
-    label: "About Me",
-    // icon: <PersonIcon style={{ color: "#efB104" }} />,
-    icon: <PersonIcon style={{ color: "#119326" }} />,
-    path: "/about-me",
-  },
-  {
-    label: "Experience",
-    icon: <WorkIcon style={{ color: "#b97e53" }} />,
-    path: "/experience",
-  },
-  {
-    label: "Projects",
-    icon: <ViewCompactIcon style={{ color: "#8f5693" }} />,
-    path: "/projects",
-  },
-  // {
-  //   label: "Blogs",
-  //   icon: <CreateIcon style={{ color: "#ec4134" }} />,
-  //   path: "/blogs",
-  // },
-  {
-    label: "Contact Me",
-    icon: <EmailIcon style={{ color: "#7c7c7c" }} />,
-    path: "/contact-me",
-  },
+	{
+		label: "Home",
+		icon: <HomeIcon style={{ color: "#3F51B5" }} />,
+		path: "/",
+	},
+	{
+		label: "About Me",
+		// icon: <PersonIcon style={{ color: "#efB104" }} />,
+		icon: <PersonIcon style={{ color: "#119326" }} />,
+		path: "/about-me",
+	},
+	{
+		label: "Experience",
+		icon: <WorkIcon style={{ color: "#b97e53" }} />,
+		path: "/experience",
+	},
+	{
+		label: "Projects",
+		icon: <ViewCompactIcon style={{ color: "#8f5693" }} />,
+		path: "/projects",
+	},
+	// {
+	//   label: "Blogs",
+	//   icon: <CreateIcon style={{ color: "#ec4134" }} />,
+	//   path: "/blogs",
+	// },
+	{
+		label: "Contact Me",
+		icon: <EmailIcon style={{ color: "#7c7c7c" }} />,
+		path: "/contact-me",
+	},
 ];
 
 const socialMediaHandles = [
-  {
-    label: "GitHub",
-    icon: <GitHubIcon style={{ color: "#24292e" }} />,
-    path: "https://github.com/patel-himanshu",
-  },
-  {
-    label: "LinkedIn",
-    icon: <LinkedInIcon style={{ color: "#0a66c2" }} />,
-    path: "https://linkedin.com/in/patel-himanshu",
-  },
-  {
-    label: "Twitter",
-    icon: <TwitterIcon style={{ color: "#1a91da" }} />,
-    path: "https://twitter.com/_Patel_Himanshu",
-  },
+	{
+		label: "GitHub",
+		icon: <GitHubIcon style={{ color: "#24292e" }} />,
+		path: "https://github.com/patel-himanshu",
+	},
+	{
+		label: "LinkedIn",
+		icon: <LinkedInIcon style={{ color: "#0a66c2" }} />,
+		path: "https://linkedin.com/in/patel-himanshu",
+	},
+	{
+		label: "Twitter",
+		icon: <TwitterIcon style={{ color: "#1a91da" }} />,
+		path: "https://twitter.com/_Patel_Himanshu",
+	},
 ];
 
 function App() {
-  const customTheme = createTheme(theme);
+	const customTheme = createTheme(theme);
 
-  return (
-    <ThemeProvider theme={customTheme}>
-      <AppbarDrawer
-        drawerOptions={drawerOptions}
-        socialMediaHandles={socialMediaHandles}
-      >
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about-me" component={AboutMe} />
-          <Route exact path="/experience" component={Experience} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/blogs" component={Blogs} />
-          <Route exact path="/contact-me" component={ContactMe} />
-          <Route path="*">
-            <Redirect to="/" />
-          </Route>
-        </Switch>
-      </AppbarDrawer>
-    </ThemeProvider>
-  );
+	return (
+		<ThemeProvider theme={customTheme}>
+			<AppbarDrawer
+				drawerOptions={drawerOptions}
+				socialMediaHandles={socialMediaHandles}
+			>
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route exact path="/about-me" component={AboutMe} />
+					<Route exact path="/experience" component={Experience} />
+					<Route exact path="/projects" component={Projects} />
+					<Route exact path="/blogs" component={Blogs} />
+					<Route exact path="/contact-me" component={ContactMe} />
+					<Route path="*">
+						<Redirect to="/" />
+					</Route>
+				</Switch>
+			</AppbarDrawer>
+		</ThemeProvider>
+	);
 }
 
 export default App;
