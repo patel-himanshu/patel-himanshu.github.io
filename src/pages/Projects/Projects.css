@@ -4,29 +4,38 @@
 }
 
 .MuiCardHeader-root {
-  /* background-color: #f8c6ff; */
-  background-color: #efc5ff;
+	background-color: #efc5ff;
 }
 
 span.MuiCardHeader-title {
-  font-size: 1.35rem;
-  font-weight: 600;
-  text-decoration: underline;
+	font-size: 1.5rem;
+	font-weight: 600;
+  /* text-decoration: purple underline 4px; */
 }
 
 span.MuiCardHeader-subheader {
-  color: #333;
+	color: #333;
 }
 
 .MuiCardActions-root {
-  background-color: #cfa3d4;
+	background-color: #cfa3d4;
 }
 
 #transition-modal-title {
-  text-align: center;
-  text-decoration: underline;
+	text-align: center;
+	text-decoration: underline;
 }
 
 #transition-modal-description {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
+}
+
+@media screen and (max-width: 600px) {
+	span.MuiCardHeader-title {
+		font-size: 1.25rem;
+	}
+
+	p.MuiTypography-root.MuiTypography-body1 {
+		font-size: 1rem;
+	}
 }
