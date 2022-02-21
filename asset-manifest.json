@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7060df29.chunk.css",
+    "main.js": "/static/js/main.eb04fd54.chunk.js",
+    "main.js.map": "/static/js/main.eb04fd54.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.595b8b54.js",
+    "runtime-main.js.map": "/static/js/runtime-main.595b8b54.js.map",
+    "static/js/2.d6fa1c5b.chunk.js": "/static/js/2.d6fa1c5b.chunk.js",
+    "static/js/2.d6fa1c5b.chunk.js.map": "/static/js/2.d6fa1c5b.chunk.js.map",
+    "static/js/3.fe640b70.chunk.js": "/static/js/3.fe640b70.chunk.js",
+    "static/js/3.fe640b70.chunk.js.map": "/static/js/3.fe640b70.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.7060df29.chunk.css.map": "/static/css/main.7060df29.chunk.css.map",
+    "static/js/2.d6fa1c5b.chunk.js.LICENSE.txt": "/static/js/2.d6fa1c5b.chunk.js.LICENSE.txt",
+    "static/media/Himanshu Patel.9362a0c7.pdf": "/static/media/Himanshu Patel.9362a0c7.pdf",
+    "static/media/bootstrap.1bc8d042.png": "/static/media/bootstrap.1bc8d042.png",
+    "static/media/coding1.de2f4766.png": "/static/media/coding1.de2f4766.png",
+    "static/media/css.4d1c49b0.png": "/static/media/css.4d1c49b0.png",
+    "static/media/django.49f178ee.png": "/static/media/django.49f178ee.png",
+    "static/media/git.3b481f00.png": "/static/media/git.3b481f00.png",
+    "static/media/himanshu-patel.122142f9.jpg": "/static/media/himanshu-patel.122142f9.jpg",
+    "static/media/html.f349a507.png": "/static/media/html.f349a507.png",
+    "static/media/javascript.d58a4c3f.png": "/static/media/javascript.d58a4c3f.png",
+    "static/media/linux.39555265.png": "/static/media/linux.39555265.png",
+    "static/media/material-ui.30facf32.png": "/static/media/material-ui.30facf32.png",
+    "static/media/mongodb.1a90cfe5.png": "/static/media/mongodb.1a90cfe5.png",
+    "static/media/mysql.2d8d8e1c.png": "/static/media/mysql.2d8d8e1c.png",
+    "static/media/postman.5940cf73.png": "/static/media/postman.5940cf73.png",
+    "static/media/python.9a19a77a.png": "/static/media/python.9a19a77a.png",
+    "static/media/react.b38f4117.png": "/static/media/react.b38f4117.png",
+    "static/media/redux.67cc70c0.png": "/static/media/redux.67cc70c0.png",
+    "static/media/sqlite.129975cd.png": "/static/media/sqlite.129975cd.png",
+    "static/media/windows.1f4c0206.png": "/static/media/windows.1f4c0206.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.595b8b54.js",
+    "static/js/2.d6fa1c5b.chunk.js",
+    "static/css/main.7060df29.chunk.css",
+    "static/js/main.eb04fd54.chunk.js"
+  ]
+}
