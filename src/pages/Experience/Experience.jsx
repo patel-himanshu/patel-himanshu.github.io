@@ -8,6 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import {
+	corporateExperience,
 	internshipDetails,
 	positionsOfResponsibility,
 } from "./experienceDetails";
@@ -62,6 +63,40 @@ const Experience = () => {
 				<header>
 					<span className="section-header">Experience</span>
 				</header>
+
+				{/* Corporate Experience section */}
+				<section>
+					<h2 className="subsection-header">Corporate Experience</h2>
+					<div className="underline" />
+					<div className={classes.root}>
+						{corporateExperience.map((position) => {
+							return (
+								<Accordion key={position}>
+									<Grid
+										container
+										style={{
+											padding: "0.5rem 1rem 0 1rem",
+										}}
+									>
+										<Grid item md={8} xs={12}>
+											<Typography
+												variant="subtitle1"
+												className={classes.positions}
+											>
+												{position.description}
+											</Typography>
+										</Grid>
+										<Grid item>
+											<Typography className={classes.secondaryHeading}>
+												{position.duration}
+											</Typography>
+										</Grid>
+									</Grid>
+								</Accordion>
+							);
+						})}
+					</div>
+				</section>
 
 				{/* Internship section section */}
 				<section>

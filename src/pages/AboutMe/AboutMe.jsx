@@ -32,7 +32,7 @@ const AboutMe = () => {
 									<span role="img" aria-label="Student">
 										👨🏼‍🎓
 									</span>{" "}
-									a final-year CSE undergrad at IIIT Naya Raipur (India)
+									a CSE undergrad at IIIT Naya Raipur (India)
 								</li>
 								<li>
 									<span role="img" aria-label="Laptop">

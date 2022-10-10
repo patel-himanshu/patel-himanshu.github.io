@@ -2,8 +2,8 @@ export const education = [
 	{
 		institute: "IIIT, Naya Raipur (C.G.)",
 		degree: "B.Tech (Computer Science & Engineering)",
-		years: "2018 - Present",
-		grade: "CGPA: 8.94/10.00",
+		years: "2018 - 2022",
+		grade: "CGPA: 8.99/10.00",
 	},
 	{
 		institute: "Delhi Public School, Bhilai (C.G.)",

@@ -1,3 +1,10 @@
+export const corporateExperience = [
+	{
+		description: "Graduate Engineer Trainee at Carl Zeiss India (Bangalore)",
+		duration: "(July 2022 - Present)",
+	},
+];
+
 export const internshipDetails = [
 	{
 		label: "label3",
