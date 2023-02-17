@@ -29,10 +29,10 @@ const AboutMe = () => {
 							My name is Himanshu Patel. Currently, I am
 							<ul>
 								<li>
-									<span role="img" aria-label="Student">
-										👨🏼‍🎓
+									<span role="img" aria-label="Work">
+										💼
 									</span>{" "}
-									a CSE undergrad at IIIT Naya Raipur (India)
+									currently working as a Graduate Engineer Trainee at Carl Zeiss, India
 								</li>
 								<li>
 									<span role="img" aria-label="Laptop">
@@ -53,7 +53,7 @@ const AboutMe = () => {
 									trying to become more involved in open source
 								</li>
 							</ul>
-							I enjoy writing code, especially in Python and TypeScript.
+							I enjoy writing code, especially in TypeScript and Python.
 							<br />I am always eager to learn and explore new things.
 						</div>
 					</Grid>

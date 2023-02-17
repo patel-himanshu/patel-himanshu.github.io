@@ -10,9 +10,10 @@ export const internshipDetails = [
 		label: "label3",
 		company: "Carl Zeiss India (Bangalore)",
 		role: "Full-Stack Developer Intern",
-		duration: "January 2022 - Present",
+		duration: "January 2022 - June 2022",
 		details: [
-			"Working on the front-end of an internal Frame Digitization Platform, using React, TypeScript and Material-UI",
+			"Worked on the front-end of Frame Digitization Platform, an internal platform to digitize eyewear frames",
+			"Used React, TypeScript, Material-UI, react-intl, recharts, Git",
 		],
 	},
 	{
@@ -23,7 +24,7 @@ export const internshipDetails = [
 		details: [
 			"Worked on the front end of an Asset Performance Manager (APM) project",
 			"Performed multiple API integrations on the front end and used Redux for state management",
-			"Used React, Redux, HTML, CSS, Material-UI, Postman, Git, Figma",
+			"Used React, Redux, Material-UI, Postman, Git, Figma",
 		],
 	},
 	{
@@ -34,7 +35,7 @@ export const internshipDetails = [
 		details: [
 			"Created multiple APIs using Django REST Framework, for an online MOOC platform",
 			"Worked on development of  the front end of the platform using Angular",
-			"Used Angular, HTML, CSS, Bootstrap, Django, Postman, Git",
+			"Used Angular, Bootstrap, Django, Postman, Git",
 		],
 	},
 ];
